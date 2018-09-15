@@ -1,0 +1,338 @@
+body {
+  background-color: #fff;
+  color: #666;
+}
+
+.top {
+  padding-left: 220.5px;
+}
+
+.cart-search {
+  margin-left: 220.5px;
+  position: relative;
+  margin-top: 10px;
+}
+.cart-search > div {
+  display: inline-block;
+}
+.cart-search .search-left {
+  margin: 15px 0 22px 0;
+  position: relative;
+}
+.cart-search .search-left .index {
+  display: inline-block;
+  width: 134px;
+  height: 42px;
+  background: url(//misc.360buyimg.com/jdf/1.0.0/unit/global-header/5.0.0/i/jdlogo-201708-@1x.png) no-repeat 0 0;
+}
+.cart-search .search-left .car {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  color: #666;
+  font-size: 21px;
+  font-weight: 400;
+  text-align: center;
+  padding: 8px 12px 8px 0;
+  top: -3px;
+}
+.cart-search .search-right {
+  position: absolute;
+  left: 660px;
+  top: 30px;
+  border: solid 2px #c91623;
+}
+.cart-search .search-right input:first-child {
+  padding: 3px 5px;
+  line-height: 18px;
+  width: 260px;
+  height: 18px;
+}
+.cart-search .search-right input:last-child {
+  color: white;
+  background-color: #c91623;
+  width: 48px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.commodity {
+  margin-left: 220.5px;
+  margin-top: 7px;
+}
+.commodity .fixed .fixed-tit a {
+  display: inline-block;
+  font-size: 16px;
+  color: black;
+  margin-right: 25px;
+  font-weight: bold;
+  width: 84px;
+  padding-bottom: 8px;
+}
+.commodity .fixed .fixed-tit a:hover {
+  color: red;
+}
+.commodity .fixed .fixed-pro {
+  background-color: #f3f3f3;
+  border: 1px solid #e9e9e9;
+  height: 32px;
+  width: 985px;
+  line-height: 32px;
+  padding: 5px 0 5px 8px;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.commodity .fixed .fixed-pro .choose-all {
+  margin: 0 74px 0 6px;
+}
+.commodity .fixed .fixed-pro .unit-price-tit {
+  margin: 0 64px 0 446px;
+}
+.commodity .fixed .fixed-pro .subtotal-tit {
+  margin: 0 40px 0 100px;
+}
+.commodity .shopping {
+  margin: 18px 0 26px 0;
+  width: 994px;
+}
+.commodity .shopping .shop-shopping .shop-tit {
+  padding: 0 0 10px 10px;
+  border-bottom: solid 2px #888888;
+}
+.commodity .shopping .shop-shopping .shop-tit a {
+  display: inline-block;
+  color: white;
+  background-color: #df3033;
+  font-size: 13px;
+  padding: 2px;
+  border-radius: 3px;
+  margin-left: 3px;
+}
+.commodity .shopping .shop-shopping .shop-goods {
+  border: 1px solid #eee;
+  margin-bottom: 20px;
+}
+.commodity .shopping .shop-shopping .shop-goods .shop-good {
+  height: 100px;
+  border-top: 1px solid #888;
+  padding: 15px 0 5px 10px;
+}
+.commodity .shopping .shop-shopping .shop-goods .shop-good input {
+  vertical-align: top;
+}
+.commodity .shopping .shop-shopping .shop-goods .shop-good img {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #eee;
+  margin-left: 10px;
+}
+.commodity .shopping .shop-shopping .shop-goods .shop-good .goods-mess {
+  display: inline-block;
+  width: 208px;
+  vertical-align: top;
+  padding-left: 6px;
+}
+.commodity .shopping .shop-shopping .shop-goods .shop-good .goods-mess a {
+  color: #666;
+  font-size: 12px;
+  line-height: 20px;
+  overflow: hidden;
+  height: 40px;
+}
+.commodity .shopping .shop-shopping .shop-goods .shop-good .goods-mess > span {
+  font-size: 12px;
+  color: #999;
+}
+.commodity .shopping .shop-shopping .shop-goods .shop-good .goods-mess > span i {
+  display: inline-block;
+  background: url(//misc.360buyimg.com/user/cart/css/i/cart-icons-201806.png) no-repeat;
+  background-position: -27px -23px;
+  width: 17px;
+  height: 16px;
+  vertical-align: middle;
+}
+.commodity .shopping .shop-shopping .shop-goods .shop-good .goods-mess > span span {
+  cursor: pointer;
+}
+.commodity .shopping .shop-shopping .shop-goods .shop-good .goods-mess > span span:hover {
+  color: red;
+}
+.commodity .shopping .shop-shopping .shop-goods .shop-good .type {
+  vertical-align: top;
+  display: inline-block;
+  width: 130px;
+  margin-left: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #999;
+  font-size: 12px;
+  padding-top: 5px;
+}
+.commodity .shopping .shop-shopping .shop-goods .shop-good .unit-price {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 5px;
+  font-size: 13px;
+  height: 50px;
+  width: 150px;
+  position: relative;
+  margin-right: 30px;
+}
+.commodity .shopping .shop-shopping .shop-goods .shop-good .unit-price .price-num {
+  position: absolute;
+  right: 0;
+}
+.commodity .shopping .shop-shopping .shop-goods .shop-good .unit-num {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  padding-top: 5px;
+  height: 22px;
+}
+.commodity .shopping .shop-shopping .shop-goods .shop-good .unit-num span {
+  display: inline-block;
+  width: 16px;
+  height: 20px;
+  line-height: 20px;
+  border: 1px solid #999;
+}
+.commodity .shopping .shop-shopping .shop-goods .shop-good .unit-num input {
+  width: 40px;
+  border-width: 1px;
+  height: 20px;
+  border-style: solid;
+  border-color: #999 #fff #999 #fff;
+  text-align: center;
+}
+.commodity .shopping .shop-shopping .shop-goods .shop-good .subtotal-tot {
+  vertical-align: top;
+  display: inline-block;
+  padding-top: 5px;
+  font-size: 13px;
+  color: black;
+  line-height: 20px;
+  width: 100px;
+  height: 20px;
+  position: relative;
+  margin-right: 30px;
+}
+.commodity .shopping .shop-shopping .shop-goods .shop-good .subtotal-tot span {
+  position: absolute;
+  right: 0;
+}
+.commodity .shopping .shop-shopping .shop-goods .shop-good .subtotal-tot .tot-money {
+  font-weight: bold;
+}
+.commodity .shopping .shop-shopping .shop-goods .shop-good .subtotal-tot .tot-weight {
+  top: 22px;
+}
+.commodity .shopping .shop-shopping .shop-goods .shop-good .deal {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 5px;
+}
+.commodity .shopping .shop-shopping .shop-goods .shop-good .deal a {
+  font-size: 12px;
+  color: #999;
+  display: block;
+}
+.commodity .shopping .shop-shopping .shop-goods .shop-good .deal:hover {
+  color: red;
+}
+.commodity .shopping .shop-shopping .choose {
+  border: 1px solid #eeeeee;
+  font-size: 12px;
+  color: #666;
+  height: 50px;
+  position: relative;
+}
+.commodity .shopping .shop-shopping .choose .all-choose {
+  padding-left: 10px;
+  display: inline-block;
+  line-height: 18px;
+  height: 18px;
+  padding-top: 17px;
+}
+.commodity .shopping .shop-shopping .choose .operation {
+  display: inline-block;
+  margin-left: 9px;
+  padding-top: 17px;
+}
+.commodity .shopping .shop-shopping .choose .operation a {
+  display: inline-block;
+  margin-right: 9px;
+  color: #999;
+}
+.commodity .shopping .shop-shopping .choose .operation .clear-car {
+  font-weight: bold;
+}
+.commodity .shopping .shop-shopping .choose .operation:hover {
+  color: red;
+}
+.commodity .shopping .shop-shopping .choose .count-all {
+  display: inline-block;
+  float: right;
+}
+.commodity .shopping .shop-shopping .choose .count-all .count-num {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 8px;
+  float: right;
+  margin-right: 10px;
+}
+.commodity .shopping .shop-shopping .choose .count-all .count-num .tot-num {
+  color: #e4393c;
+}
+.commodity .shopping .shop-shopping .choose .count-all .count-num i {
+  display: inline-block;
+  width: 9px;
+  height: 5px;
+  margin-right: 3px;
+  background: url(//misc.360buyimg.com/user/cart/css/i/cart-icons-201809.png);
+  vertical-align: middle;
+}
+.commodity .shopping .shop-shopping .choose .count-all .count-num i.up {
+  background-position: -45px -91px;
+}
+.commodity .shopping .shop-shopping .choose .count-all .count-num i.down {
+  background-position: -45px -95px;
+}
+.commodity .shopping .shop-shopping .choose .count-all .count-money {
+  display: inline-block;
+  padding-top: 6px;
+  float: right;
+  margin-right: 20px;
+}
+.commodity .shopping .shop-shopping .choose .count-all .count-money span {
+  line-height: 20px;
+}
+.commodity .shopping .shop-shopping .choose .count-all .count-money .money-count {
+  color: #e4393c;
+  font-size: 16px;
+}
+.commodity .shopping .shop-shopping .choose .count-all .balance {
+  display: inline-block;
+  vertical-align: top;
+  float: right;
+}
+.commodity .shopping .shop-shopping .choose .count-all .balance a {
+  display: inline-block;
+  width: 80px;
+  height: 26px;
+  color: #fff;
+  background-color: #df3033;
+  text-align: center;
+  font-size: 18px;
+  padding: 12px;
+}
+
+.checked {
+  background-color: #fff4e8;
+}
+
+.not-checked {
+  background-color: #fff;
+}
+
+/*# sourceMappingURL=cart.css.map */

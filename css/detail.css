@@ -1,0 +1,766 @@
+body {
+  background-color: #fff;
+  color: #666;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+em, i, u {
+  font-style: normal;
+}
+
+.top {
+  padding-left: 120px;
+}
+.top .log {
+  padding-left: 420px;
+}
+
+.turn1 {
+  position: absolute;
+  display: block;
+  z-index: 2;
+  width: 22px;
+  height: 32px;
+  margin-top: -16px;
+  top: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+.turn1#turn1-2 {
+  right: 0;
+  background-position: -78px 0;
+  background: url(//static.360buyimg.com/item/unite/1.0.53/components/default/preview/i/__sprite.png);
+}
+.turn1#turn1-1 {
+  background: url(//static.360buyimg.com/item/unite/1.0.53/components/default/preview/i/disabled-prev.png);
+}
+
+.world {
+  width: 1210px;
+  height: 100px;
+  margin-left: 110px;
+}
+.world .log-pic {
+  height: 60px;
+  width: 362px;
+  padding: 20px 0;
+  position: relative;
+  vertical-align: top;
+  float: left;
+}
+.world .log-pic > a {
+  display: inline-block;
+  width: 270px;
+  height: 60px;
+  background: url(//misc.360buyimg.com/jdf/1.0.0/unit/global-header/1.0.0/i/jdlogo-201708-@1x.png) no-repeat 0 0;
+}
+.world .log-pic .extra {
+  position: absolute;
+  top: 15px;
+  left: 168px;
+  padding-left: 10px;
+}
+.world .log-pic .extra div:first-child {
+  position: relative;
+  top: 22px;
+  height: 25px;
+  width: 63px;
+  color: #ccc;
+  border: 1px solid #ccc;
+  line-height: 25px;
+  padding: 0 5px;
+}
+.world .log-pic .extra div:first-child h2 {
+  font-size: 12px;
+  font-weight: 400;
+  color: #666;
+}
+.world .search {
+  position: relative;
+  margin-top: 25px;
+  vertical-align: top;
+  float: left;
+}
+.world .search input {
+  width: 446px;
+  height: 24px;
+  line-height: 24px;
+  padding: 4px;
+  margin-bottom: 4px;
+  border-width: 2px 0 2px 2px;
+  border: solid #B61D1D;
+  font-size: 14px;
+  outline: 0;
+}
+.world .search button {
+  font-size: 12px;
+  padding: 0 8px;
+  height: 36px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.world .search button.search-all {
+  background-color: #B61D1D;
+}
+.world .search button.search-own {
+  background-color: #474e5c;
+}
+.world .shopping-car {
+  position: relative;
+  margin: 25px 65px 0 0;
+  vertical-align: top;
+  float: right;
+}
+.world .shopping-car .shop-car {
+  width: 75px;
+  height: 34px;
+  border: 1px solid #dfdfdf;
+  padding: 0 28px 0 36px;
+  background-color: #F9F9F9;
+  text-align: center;
+  line-height: 34px;
+}
+.world .shopping-car .shop-car a {
+  color: #666;
+  font-size: 12px;
+}
+.world .hot-words {
+  width: 518px;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  float: left;
+}
+.world .hot-words a {
+  display: inline-block;
+  color: #666;
+  margin-right: 10px;
+  font-size: 11px;
+}
+
+.shop-head {
+  height: 150px;
+  width: 1431px;
+  overflow: hidden;
+}
+.shop-head .shop-bg {
+  width: 1920px;
+  height: 110px;
+  margin: 0 -224.5px;
+}
+.shop-head .shop-bg img {
+  width: 100%;
+  height: 100%;
+}
+.shop-head .shop-menu {
+  width: 1431px;
+  height: 40px;
+}
+.shop-head .shop-menu .menu {
+  width: 990px;
+}
+.shop-head .shop-menu .menu ul {
+  margin-left: 220px;
+}
+.shop-head .shop-menu .menu ul li {
+  float: left;
+}
+.shop-head .shop-menu .menu ul li:hover {
+  background-color: #9b2800;
+}
+.shop-head .shop-menu .menu ul li a {
+  display: inline-block;
+  padding: 0 20px;
+  line-height: 40px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.goods {
+  margin-left: 110.5px;
+  width: 1210px;
+}
+.goods .goods-container {
+  margin: 10px 0 10px 0;
+}
+.goods .goods-container .goods-pics {
+  width: 452px;
+  float: left;
+  padding-bottom: 15px;
+  position: relative;
+}
+.goods .goods-container .goods-pics .pic-big {
+  position: relative;
+  border: 1px solid #eee;
+  margin-bottom: 20px;
+  height: 450px;
+  width: 450px;
+}
+.goods .goods-container .goods-pics .pic-big .big-picture {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.goods .goods-container .goods-pics .pic-big .big-picture img {
+  height: 450px;
+  width: 450px;
+}
+.goods .goods-container .goods-pics .pic-small {
+  position: relative;
+  margin-bottom: 18px;
+}
+.goods .goods-container .goods-pics .pic-small .small-scene {
+  position: relative;
+  height: 58px;
+  width: 380px;
+  overflow: hidden;
+  margin-left: 36px;
+}
+.goods .goods-container .goods-pics .pic-small .small-scene .small-scroll {
+  position: absolute;
+  height: 58px;
+  width: 460px;
+}
+.goods .goods-container .goods-pics .pic-small .small-scene .small-scroll .small-picture {
+  margin: 0 9px;
+  float: left;
+}
+.goods .goods-container .goods-pics .pic-small .small-scene .small-scroll .small-picture img {
+  width: 54px;
+  height: 54px;
+  border-style: solid;
+  border-width: 2px;
+}
+.goods .goods-container .goods-pics .info {
+  height: 20px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.goods .goods-container .goods-pics .info .left {
+  float: left;
+}
+.goods .goods-container .goods-pics .info .left a {
+  display: inline-block;
+  margin-right: 2px;
+  color: #666;
+}
+.goods .goods-container .goods-pics .info .left a:hover {
+  color: red;
+}
+.goods .goods-container .goods-pics .info .right {
+  float: right;
+}
+.goods .goods-container .goods-pics .info .right a {
+  color: #666;
+}
+.goods .goods-container .goods-pics .info .right a:hover {
+  color: red;
+}
+.goods .goods-container .itemInfo {
+  float: right;
+  width: 738px;
+}
+.goods .goods-container .itemInfo .goods-name {
+  padding-top: 10px;
+  line-height: 28px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.goods .goods-container .itemInfo .summary-price {
+  margin-bottom: 5px;
+}
+.goods .goods-container .itemInfo .summary-price .price-wrap {
+  padding: 10px 0 0;
+  background-color: #f3f3f3;
+}
+.goods .goods-container .itemInfo .summary-price .price-wrap .price {
+  margin-bottom: 5px;
+  position: relative;
+}
+.goods .goods-container .itemInfo .summary-price .price-wrap .price .price-before {
+  line-height: 22px;
+}
+.goods .goods-container .itemInfo .summary-price .price-wrap .price .price-middle {
+  line-height: 22px;
+}
+.goods .goods-container .itemInfo .summary-price .price-wrap .price .price-middle > span {
+  color: #E4393C;
+  margin-right: 10px;
+}
+.goods .goods-container .itemInfo .summary-price .price-wrap .price .price-middle > span .price-code {
+  font-size: 16px;
+}
+.goods .goods-container .itemInfo .summary-price .price-wrap .price .price-middle > span .sale-price {
+  font-size: 22px;
+}
+.goods .goods-container .itemInfo .summary-price .price-wrap .price .price-middle > a {
+  color: #005aa0;
+  vertical-align: 2px;
+  font-size: 12px;
+  font-weight: 300;
+}
+.goods .goods-container .itemInfo .summary-price .price-wrap .goods-sale {
+  background: url(//static.360buyimg.com/item/unite/1.0.53/components/default/common/i/price-bg.png) 0 -12px repeat-x #efefef;
+}
+.goods .goods-container .itemInfo .summary-price .price-wrap .goods-sale > div {
+  margin-bottom: 5px;
+}
+.goods .goods-container .itemInfo .summary-price .price-wrap .goods-sale > div .sale-before {
+  line-height: 30px;
+}
+.goods .goods-container .itemInfo .summary-price .price-wrap .goods-sale > div .sale-middle {
+  line-height: 30px;
+  margin-right: 90px;
+}
+.goods .goods-container .itemInfo .summary-price .price-wrap .goods-sale > div .sale-middle em {
+  font-style: normal;
+  font-size: 12px;
+}
+.goods .goods-container .itemInfo .summary-price .price-wrap .goods-sale > div .sale-middle .price-plus {
+  display: inline-block;
+  color: #df3033;
+  border: 1px solid #df3033;
+  padding: 2px 3px;
+  margin-right: 5px;
+  line-height: 16px;
+}
+.goods .goods-container .itemInfo .summary-price .price-wrap .goods-sale > div .sale-middle .summary-sub {
+  line-height: 18px;
+}
+.goods .goods-container .itemInfo .summary-price .price-wrap .goods-sale > div .sale-middle a {
+  line-height: 30px;
+  color: #666;
+  font-size: 12px;
+}
+.goods .goods-container .itemInfo .summary-price .price-wrap .goods-sale > div .sale-middle a s {
+  text-decoration: none;
+}
+.goods .goods-container .itemInfo .summary-price .price-wrap .goods-sale > div .sale-middle a:hover {
+  color: red;
+}
+.goods .goods-container .itemInfo .choose {
+  position: relative;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+.goods .goods-container .itemInfo .choose .summary-support {
+  margin-bottom: 3px;
+  position: relative;
+  line-height: 32px;
+}
+.goods .goods-container .itemInfo .choose .summary-support .choose-support {
+  margin-right: 10px;
+}
+.goods .goods-container .itemInfo .choose .summary-support .choose-support > a {
+  line-height: 18px;
+  display: inline-block;
+}
+.goods .goods-container .itemInfo .choose .summary-support .choose-support > a i {
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  vertical-align: -4px;
+}
+.goods .goods-container .itemInfo .choose .summary-support .choose-support > a i.i1 {
+  background: url(//static.360buyimg.com/item/unite/1.0.53/components/default/address/i/__sprite.png);
+  background-position: -32px 0;
+}
+.goods .goods-container .itemInfo .choose .summary-support .choose-support > a i.i2 {
+  background: url(//static.360buyimg.com/item/unite/1.0.53/components/default/address/i/__sprite.png);
+  background-position: -16px 0;
+}
+.goods .goods-container .itemInfo .choose .summary-support .choose-support > a > span {
+  display: inline-block;
+  border: 1px solid #ced2e6;
+  line-height: 16px;
+  border-radius: 8px;
+  color: #5e69ad;
+  padding: 0 5px 0 16px;
+  margin-left: -16px;
+}
+.goods .goods-container .itemInfo .choose .summary-stock .choose-stock {
+  margin-bottom: 5px;
+}
+.goods .goods-container .itemInfo .choose .summary-stock .choose-stock .stock-place {
+  float: left;
+  height: 23px;
+  border: 1px solid #CECBCE;
+  padding: 0 24px 0 4px;
+  line-height: 23px;
+  margin: -3px 6px 0 -5px;
+}
+.goods .goods-container .itemInfo .choose .summary-stock .choose-stock .prompt {
+  color: #999;
+  margin-right: 10px;
+  float: left;
+  height: 24px;
+}
+.goods .goods-container .itemInfo .choose .summary-stock .choose-stock .promise {
+  float: left;
+  height: 24px;
+  color: #666;
+}
+.goods .goods-container .itemInfo .choose .summary-stock .choose-stock .promise div:first-child {
+  float: left;
+  margin-right: 5px;
+}
+.goods .goods-container .itemInfo .choose .summary-stock .choose-stock .promise div:last-child {
+  display: inline-block;
+  height: 20px;
+  float: left;
+}
+.goods .goods-container .itemInfo .choose .summary-stock .choose-stock .promise div:last-child a {
+  color: #646FB0;
+  display: inline-block;
+  margin-bottom: 5px;
+  padding: 0 10px;
+  border-right: 1px solid #EAEAEA;
+  white-space: nowrap;
+}
+.goods .goods-container .itemInfo .choose .summary-stock .choose-stock .promise div:last-child a:last-child {
+  border-color: #fff;
+}
+.goods .goods-container .itemInfo .choose .supply {
+  clear: both;
+  margin-top: -10px;
+  margin-bottom: 3px;
+  line-height: 32px;
+  color: #999;
+}
+.goods .goods-container .itemInfo .choose .supply .summary-service > span {
+  color: #e4393c;
+}
+.goods .goods-container .itemInfo .choose .supply-weight {
+  line-height: 32px;
+  margin-bottom: 3px;
+}
+.goods .goods-container .itemInfo .choose .choose-attrs {
+  margin-bottom: 3px;
+  line-height: 40px;
+}
+.goods .goods-container .itemInfo .choose .choose-attrs .choose-color > div {
+  background-color: #F7F7F7;
+  display: inline-block;
+  margin: 0 7px 4px 0;
+}
+.goods .goods-container .itemInfo .choose .choose-attrs .choose-color > div a {
+  display: inline-block;
+  border: solid 1px #ccc;
+  color: #666;
+}
+.goods .goods-container .itemInfo .choose .choose-attrs .choose-color > div a:hover {
+  border-color: #e3393c;
+}
+.goods .goods-container .itemInfo .choose .choose-attrs .choose-color > div a img {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+.goods .goods-container .itemInfo .choose .choose-attrs .choose-color > div a i {
+  margin: 0 8px;
+}
+.goods .goods-container .itemInfo .choose .choose-suits {
+  margin-bottom: 3px;
+  line-height: 32px;
+}
+.goods .goods-container .itemInfo .choose .choose-suits .choose-suit > div {
+  display: inline-block;
+  margin: 0 7px 4px 0;
+}
+.goods .goods-container .itemInfo .choose .choose-suits .choose-suit > div a {
+  display: inline-block;
+  border: solid 1px #ccc;
+  color: #666;
+  padding: 0 13px;
+}
+.goods .goods-container .itemInfo .choose .choose-suits .choose-suit > div a:hover {
+  border-color: #e3393c;
+}
+.goods .goods-container .itemInfo .choose .choose-services {
+  margin-bottom: 7px;
+  line-height: 32px;
+}
+.goods .goods-container .itemInfo .choose .choose-services .choose-service .choose-service-item {
+  display: inline-block;
+}
+.goods .goods-container .itemInfo .choose .choose-services .choose-service .choose-service-item .service-item {
+  cursor: pointer;
+  padding: 4px 5px 4px 6px;
+  border: 1px solid #ccc;
+  line-height: 20px;
+  margin: 0 7px 2px 0;
+}
+.goods .goods-container .itemInfo .choose .choose-services .choose-service .choose-service-item .service-item img {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.goods .goods-container .itemInfo .choose .choose-services .choose-service .choose-service-item .service-item .name {
+  font-size: 12px;
+  margin-right: 4px;
+  height: 20px;
+  display: inline-block;
+}
+.goods .goods-container .itemInfo .choose .choose-services .choose-service .choose-service-item .service-item .price {
+  font-size: 12px;
+  margin-right: 5px;
+  display: inline-block;
+}
+.goods .goods-container .itemInfo .choose .choose-services .choose-service .choose-service-item .service-item i {
+  width: 15px;
+  height: 10px;
+  display: inline-block;
+}
+.goods .goods-container .itemInfo .choose .choose-services .choose-service .service-tips {
+  display: inline-block;
+  position: relative;
+}
+.goods .goods-container .itemInfo .choose .choose-services .choose-service .service-tips i {
+  background: url(//static.360buyimg.com/item/unite/1.0.53/components/default/jdservice/i/__sprite.png) 0 0;
+  height: 16px;
+  width: 16px;
+  display: block;
+  position: relative;
+  top: 4px;
+}
+.goods .goods-container .itemInfo .choose .choose-buttons {
+  margin: 10px 0 20px 0;
+  padding: 0 10px;
+  vertical-align: top;
+}
+.goods .goods-container .itemInfo .choose .choose-buttons .count {
+  height: 45px;
+  width: 58px;
+  border: 1px solid #ccc;
+  position: relative;
+  margin-right: 13px;
+  display: inline-block;
+}
+.goods .goods-container .itemInfo .choose .choose-buttons .count .count-number {
+  height: 42px;
+  width: 43px;
+  display: inline-block;
+  text-align: center;
+  padding-top: 2px;
+}
+.goods .goods-container .itemInfo .choose .choose-buttons .count a {
+  position: absolute;
+  display: inline-block;
+  width: 15px;
+  text-align: center;
+  height: 22px;
+  line-height: 20px;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+.goods .goods-container .itemInfo .choose .choose-buttons .count a.count-plus {
+  top: -1px;
+  right: -2px;
+}
+.goods .goods-container .itemInfo .choose .choose-buttons .count a.count- {
+  top: 22px;
+  right: -2px;
+}
+.goods .goods-container .itemInfo .choose .choose-buttons > a {
+  display: inline-block;
+  padding: 0 26px;
+  margin-right: 10px;
+  background-color: #df3033;
+  color: #fff;
+  height: 46px;
+  line-height: 46px;
+  vertical-align: top;
+  font-size: 18px;
+}
+
+.judgement {
+  clear: both;
+  width: 990px;
+  margin-bottom: 15px;
+  margin-left: 330px;
+}
+.judgement .judge-head {
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.judgement .judge-content .judge-info {
+  padding: 25px 0;
+  position: relative;
+}
+.judgement .judge-content .judge-info .judge-percent {
+  display: inline-block;
+  padding: 15px 0 0 40px;
+  width: 90px;
+}
+.judgement .judge-content .judge-info .judge-percent strong {
+  font-size: 12px;
+  color: #666;
+}
+.judgement .judge-content .judge-info .judge-percent > div {
+  color: #E4393C;
+  font-size: 45px;
+}
+.judgement .judge-content .judge-info .judge-percent > div span {
+  font-size: 23px;
+}
+.judgement .judge-content .judge-info .percent-info {
+  display: inline-block;
+  padding-left: 20px;
+  position: absolute;
+}
+.judgement .judge-content .judge-info .percent-info span {
+  display: inline-block;
+  color: #999;
+  line-height: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  margin: 0 10px 10px 0;
+  padding: 0 9px;
+  font-size: 12px;
+}
+.judgement .judge-content .comments .comment-tab {
+  background: #fafafa;
+  border: 1px solid #f5f5f5;
+  padding-left: 10px;
+}
+.judgement .judge-content .comments .comment-tab > a {
+  color: #999;
+  font-size: 13px;
+  padding: 5px 10px;
+  display: inline-block;
+}
+.judgement .judge-content .comments .comment-content {
+  padding: 10px 0;
+}
+.judgement .judge-content .comments .comment-content > div {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+.judgement .judge-content .comments .comment-content > div > div {
+  display: inline-block;
+}
+.judgement .judge-content .comments .comment-content > div .user {
+  width: 140px;
+  vertical-align: top;
+}
+.judgement .judge-content .comments .comment-content > div .user img {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  display: inline-block;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.judgement .judge-content .comments .comment-content > div .user span {
+  height: 25px;
+  vertical-align: middle;
+}
+.judgement .judge-content .comments .comment-content > div .user > div {
+  padding-top: 3px;
+  color: #e1a10a;
+  font-size: 12px;
+}
+.judgement .judge-content .comments .comment-content > div .comment-det {
+  margin-left: 10px;
+  width: 800px;
+  vertical-align: top;
+}
+.judgement .judge-content .comments .comment-content > div .comment-det .stars {
+  width: 78px;
+  height: 14px;
+  background: url(//static.360buyimg.com/item/unite/1.0.53/components/default/comment/i/star.png) no-repeat;
+}
+.judgement .judge-content .comments .comment-content > div .comment-det p {
+  font-size: 14px;
+  padding: 10px 0;
+  color: #333;
+  line-height: 180%;
+}
+.judgement .judge-content .comments .comment-content > div .comment-det .comment-pic {
+  margin-bottom: 15px;
+}
+.judgement .judge-content .comments .comment-content > div .comment-det .comment-pic a {
+  display: inline-block;
+}
+.judgement .judge-content .comments .comment-content > div .comment-det .comment-pic a img {
+  border: 1px solid #e2e2e2;
+  padding: 1px;
+  height: 48px;
+  width: 48px;
+}
+.judgement .judge-content .comments .comment-content > div .comment-det .comment-message {
+  position: relative;
+}
+.judgement .judge-content .comments .comment-content > div .comment-det .comment-message .type-time {
+  display: inline-block;
+  color: #999;
+  font-size: 12px;
+}
+.judgement .judge-content .comments .comment-content > div .comment-det .comment-message .type-time span {
+  margin-right: 20px;
+}
+.judgement .judge-content .comments .comment-content > div .comment-det .comment-message .comment-op {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+.judgement .judge-content .comments .comment-content > div .comment-det .comment-message .comment-op a {
+  font-size: 12px;
+  display: inline-block;
+  margin-left: 25px;
+  color: #666;
+}
+.judgement .judge-content .comments .comment-content > div .comment-det .comment-message .comment-op a i {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-right: 5px;
+}
+.judgement .judge-content .comments .comment-content > div .comment-det .comment-message .comment-op a i.i1 {
+  background-image: url(//static.360buyimg.com/item/unite/1.0.53/components/default/comment/i/__sprite.png?v=161726);
+  background-position: -32px -34px;
+}
+.judgement .judge-content .comments .comment-content > div .comment-det .comment-message .comment-op a i.i2 {
+  background-image: url(//static.360buyimg.com/item/unite/1.0.53/components/default/comment/i/__sprite.png?v=161726);
+  background-position: -48px -34px;
+}
+
+.red {
+  border-color: red;
+}
+
+.fff {
+  border-color: #fff;
+}
+
+.dt {
+  float: left;
+  padding-left: 10px;
+  color: #999;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.dd {
+  margin-left: 70px;
+  color: #999;
+}
+
+.summary-line {
+  margin-bottom: 15px;
+  border-bottom: 1px dotted #dfdfdf;
+}
+
+/*# sourceMappingURL=detail.css.map */

@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>detail</title>
+    <link href="../css/index.css" type="text/css" rel="stylesheet">
+    <link href="../css/detail.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div id="detail">
+    <div class="top">
+        <span>京东首页</span>
+        <span class="place">北京</span>
+        <span class="log" id="log">您好，请登录</span>
+        <span id="register">免费注册</span>
+        <ul id="my">
+            <span class="ge"></span>
+            <li>我的订单</li>
+            <span class="ge"></span>
+            <li>我的京东</li>
+            <span class="ge"></span>
+            <li>京东会员</li>
+            <span class="ge"></span>
+            <li>企业采购</li>
+            <span class="ge"></span>
+            <li>客户服务</li>
+            <span class="ge"></span>
+            <li>网站导航</li>
+            <span class="ge"></span>
+            <li>手机京东</li>
+        </ul>
+    </div>
+    <div class="world">
+        <div class="log-pic">
+            <a href="//www.jd.com"></a>
+            <div class="extra">
+                <div>
+                    <h2>
+                        <a>
+                            全部分类
+                        </a>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="search">
+            <input type="text"><button class="search-all">搜全站</button><button class="search-own">搜本店</button>
+        </div>
+        <div class="shopping-car">
+            <div class="shop-car">
+                <a href="xx">我的购物车</a>
+            </div>
+        </div>
+        <div class="hot-words">
+            <a v-for="word in hot_words"  v-bind:href="word.href">{{word.spell}}</a>
+        </div>
+    </div>
+    <div class="shop-head">
+        <div class="shop-bg">
+            <img usemap="#Map"  src="//img20.360buyimg.com/vc/jfs/t24256/309/457856009/74047/56968985/5b304aedNa251afcd.jpg">
+            <map name="Map">
+                <area shape="rect" coords="852,1,1206,114" href="xxx" target="_blank">
+            </map>
+        </div>
+        <div class="shop-menu" v-bind:style="{backgroundColor:menu_bgc}">
+            <div class="menu">
+                <ul class="menu-list">
+                    <li v-for="menu_list in menu_lists">
+                        <a v-bind:href="menu_list.url">{{menu_list.tit}}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="goods">
+        <div class="goods-container">
+            <div class="goods-pics">
+                <div class="pic-big">
+                    <div class="big-picture" v-for="goods_picture,index in goods_pictures" v-show="index == current_index">
+                        <img v-bind:src="goods_picture.src1">
+                    </div>
+                </div>
+                <div class="pic-small">
+                    <div class="small-scene" >
+                        <div class="small-scroll" v-bind:style="{left: -current_index1*74+'px'}">
+                            <div class="small-picture" v-for="goods_picture,index in goods_pictures">
+                                <img v-bind:src="goods_picture.src2"
+                                     v-on:mouseover="commonIndex(index)"
+                                     v-bind:class="index === current_index ? red : fff " >
+                            </div>
+                        </div>
+                    </div>
+                    <i class="turn1" id="turn1-1" v-on:click="turn1(-1)"></i>
+                    <i class="turn1" id="turn1-2" v-on:click="turn1(1)"></i>
+                </div>
+                <div class="info">
+                    <div class="left">
+                        <a href="follow">关注</a>
+                        <a href="share">分享</a>
+                        <a href="compare">对比</a>
+                    </div>
+                    <div class="right">
+                        <a href="ju">举报</a>
+                    </div>
+                </div>
+            </div>
+            <div class="itemInfo">
+                <div class="goods-name">
+                    TP-LINK TL-WDR6320 1200M 11AC双频智能无线路由器 无线穿墙
+                </div>
+                <div class="summary-price">
+                    <div class="price-wrap">
+                        <div class="price">
+                            <div class="price-before dt">京 东 价</div>
+                            <div class="price-middle dd">
+                                <span>
+                                    <span class="price-code">￥</span><!--这是注释
+                                    这是注释--><span class="sale-price">149</span>
+                                </span>
+                                <a href="xxx">降价通知</a>
+                            </div>
+                        </div>
+                        <div class="goods-sale">
+                            <div>
+                                <div class="sale-before dt">促　　销</div>
+                                <div class="sale-middle dd">
+                                    <em class="price-plus">加价购</em>
+                                    <em class="summary-sub">满9元另加19.80元，或满15元另加29.90元，或满20元另加39.90元，即可在购物车换购热销商品</em>
+                                    <a href="xxx">详情
+                                        <s>&gt&gt</s>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="choose">
+                    <div class="summary-support">
+                        <div class="dt">增值业务</div>
+                        <div class="dd choose-support">
+                            <a href="x1">
+                                <i class="i1"></i>
+                                <span>以旧换新，享优惠</span>
+                            </a>
+                            <a href="x2">
+                                <i class="i2"></i>
+                                <span>礼品包装</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="summary-stock">
+                        <div class="dt">配 送 至</div>
+                        <div class="dd choose-stock">
+                            <div class="stock-place">
+                                北京朝阳区三环以内
+                            </div>
+                            <div class="prompt">
+                                <strong>有货</strong>
+                            </div>
+                            <div class="promise">
+                                <div>支持</div>
+                                <div>
+                                    <a href="1" title="所选地址自营订单满99元免基础运费(20kg内)，超出重量加收1元/kg续重运费。">99元免基础运费(20kg内)</a>
+                                    <a href="2">京准达</a>
+                                    <a href="3">自提</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="supply">
+                        <div class="dt"></div>
+                        <div class="dd summary-service">
+                            由
+                            <span class="jing">京东</span>
+                            发货, 并提供售后服务. 23:00前下单,预计
+                            <b>明天</b>
+                            送达,尊敬的用户您好，受中非峰会影响，您的订单可能会有延迟，京东物流将全力为您服务，请您耐心等待。
+                        </div>
+                    </div>
+                    <div class="supply-weight">
+                        <div class="dt">重　　量</div>
+                        <div class="dd">0.745KG</div>
+                    </div>
+                    <div class="summary-line"></div>
+                    <div class="choose-attrs">
+                        <div class="dt">选择颜色</div>
+                        <div class="dd choose-color">
+                            <div v-for="choose_color in choose_colors">
+                                <a v-bind:href="choose_color.href">
+                                    <img v-bind:src="choose_color.src">
+                                    <i>{{choose_color.tit}}</i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choose-suits">
+                        <div class="dt">套　　装</div>
+                        <div class="dd choose-suit">
+                            <div v-for="choose_suit in choose_suits">
+                                <a v-bind:href="choose_suit.href">{{choose_suit.tit}}</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choose-services">
+                        <div class="dt">增值保障</div>
+                        <div class="dd choose-service">
+                            <div v-for="choose_service in choose_services" class="choose-service-item">
+                                <div class="service-item">
+                                    <img v-bind:src="choose_service.src">
+                                    <span class="name">{{choose_service.name}}</span>
+                                    <span class="price">{{choose_service.price}}</span>
+                                    <i v-bind:style="{background:choose_service.bg}"></i>
+                                </div>
+                            </div>
+                            <div class="service-tips">
+                                <span><i></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choose-service+ choose-services">
+                        <div class="dt">京东服务</div>
+                        <div class="dd choose-service">
+                            <div class="choose-service-item">
+                                <div class="service-item">
+                                    <img src="//img30.360buyimg.com/test/jfs/t22159/134/850071564/1764/f114bd5a/5b1a29a0Nad9d143a.png">
+                                    <span class="name">上门安装服务</span>
+                                    <span class="price">￥89</span>
+                                    <i style="background: url(//static.360buyimg.com/item/unite/1.0.53/components/default/jdservicePlus/i/service-icon.png) -2px -1px"></i>
+                                </div>
+                            </div>
+                            <div class="service-tips">
+                                <span><i></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="baitiao choose-suits">
+                        <div class="dt">白条分期</div>
+                        <div class="dd choose-suit">
+                            <div v-for="bai_item in bai">
+                                <a v-bind:href="bai_item.href">{{bai_item.tit}}</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="summary-line"></div>
+                    <div class="choose-buttons">
+                        <div class="count">
+                            <input v-bind:value="count" class="count-number"><a class="count-plus" v-on:click="count_plus">+</a><a class="count-" v-on:click="count_jian">-</a>
+                        </div>
+                        <a>
+                            加入购物车
+                        </a>
+                    </div>
+                    <div class="summary-tips">
+                        <div class="dt">温馨提示</div>
+                        <div class="dd">
+                            <i>·支持7天无理由退货</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="judgement">
+        <div class="judge-head">商品评价</div>
+        <div class="judge-content">
+            <div class="judge-info">
+                <div class="judge-percent">
+                    <strong>好评度</strong>
+                    <div class="percent-detail">
+                        96<span>%</span>
+                    </div>
+                </div>
+                <div class="percent-info">
+                    <span v-for="item in comments_tot">
+                        {{item.tit}}
+                    </span>
+                </div>
+            </div>
+            <div class="comments">
+                <div class="comment-tab">
+                    <a v-for="filter_item in filter" v-bind:href="filter_item.href">{{filter_item.tit}}</a>
+                </div>
+                <div class="comment-content">
+                    <div class="one-comment">
+                        <div class="user">
+                            <img src="//misc.360buyimg.com/user/myjd-2015/css/i/peisong.jpg">
+                            <span>ssss</span>
+                            <div>PLUS会员</div>
+                        </div>
+                        <div class="comment-det">
+                            <div class="stars"></div>
+                            <p>买这个路由器主要是为了省地方，确实节省空间！5G穿墙真心不行，一面墙可以，2.4G还行！和原来用的华为光猫自带wifi效果是一样的！tplink的路由品牌很好，一直用，可以桥接，软件控制便捷！希望不要追求天线数量而不考虑穿墙能力！</p>
+                            <div class="comment-pic">
+                                <a>
+                                    <img src="//img30.360buyimg.com/n0/s48x48_jfs/t13939/270/297584480/107923/9a6bdca7/5a0811acN795401c6.jpg">
+                                </a>
+                            </div>
+                            <div class="comment-message">
+                                <div class="type-time">
+                                    <span>1200M【全新外观】</span>
+                                    <span>2017-11-12 17:17</span>
+                                </div>
+                                <div class="comment-op">
+                                    <a>举报</a>
+                                    <a>
+                                        <i class="i1"></i>10
+                                    </a>
+                                    <a>
+                                        <i class="i2"></i>0
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    var vm = new Vue({
+        el:"#detail",
+        data:{
+            menu_bgc:"#10100F",
+            current_index: 0,
+            current_index1: 0,
+            red: "red",
+            fff: "fff",
+            count:1,
+            filter:[
+                {
+                    href:"11",
+                    tit:"全部评价"
+                },
+                {
+                    href:"11",
+                    tit:"晒图"
+                },
+                {
+                    href:"11",
+                    tit:"追评"
+                },
+                {
+                    href:"11",
+                    tit:"好评"
+                },{
+                    href:"11",
+                    tit:"中评"
+                },{
+                    href:"11",
+                    tit:"差评"
+                }
+
+            ],
+            comments_tot:[
+                {
+                    tit:"信号稳定(167)"
+                },{
+                    tit:"十分大气(58)"
+                },{
+                    tit:"方便快捷(24)"
+                },{
+                    tit:"信号稳定(167)"
+                },{
+                    tit:"十分大气(58)"
+                },{
+                    tit:"方便快捷(24)"
+                },{
+                    tit:"信号稳定(167)"
+                },{
+                    tit:"十分大气(58)"
+                },{
+                    tit:"方便快捷(24)"
+                },{
+                    tit:"信号稳定(167)"
+                },{
+                    tit:"十分大气(58)"
+                },{
+                    tit:"方便快捷(24)"
+                }
+            ],
+            choose_services:[
+                {
+                    src:"//img14.360buyimg.com//fuwu/jfs/t5431/52/1153921527/1119/b6e6fbf5/590c0c85N460e4552.png",
+                    name:"全保修2年",
+                    price:"￥15",
+                    bg:"url(//static.360buyimg.com/item/unite/1.0.53/components/default/jdservice/i/service-icon.png) -2px -1px"
+                },{
+                    src:"//img10.360buyimg.com//fuwu/jfs/t2083/278/1782000835/1227/e5dadbca/567cb046Ncc8f504a.png",
+                    name:"换新保2年",
+                    price:"￥12",
+                    bg:"url(//static.360buyimg.com/item/unite/1.0.53/components/default/jdservice/i/service-icon.png) -2px -1px"
+                },{
+                    src:"//img14.360buyimg.com//fuwu/jfs/t2308/22/1900521573/1313/a055eace/567cb057N77e247ca.png",
+                    name:"2年意外换",
+                    price:"￥15",
+                    bg:"url(//static.360buyimg.com/item/unite/1.0.53/components/default/jdservice/i/service-icon.png) -2px -1px"
+                }
+            ],
+            choose_suits:[
+                {
+                    href:"aa3",
+                    tit:"优惠套餐1"
+                },{
+                    href:"aa3",
+                    tit:"优惠套餐2"
+                },{
+                    href:"aa3",
+                    tit:"优惠套餐3"
+                },{
+                    href:"aa3",
+                    tit:"优惠套餐4"
+                },{
+                    href:"aa3",
+                    tit:"优惠套餐5"
+                },{
+                    href:"aa2",
+                    tit:"优惠套餐6"
+                }
+            ],
+            bai:[
+                {
+                    href:"aa2",
+                    tit:"不分期"
+                },{
+                    href:"aa2",
+                    tit:"￥48.72起×3期"
+                },{
+                    href:"aa2",
+                    tit:"￥24.72起×6期"
+                },{
+                    href:"aa2",
+                    tit:"￥12.72起×12期"
+                },{
+                    href:"aa2",
+                    tit:"￥6.72起×24期"
+                }
+            ],
+            choose_colors:[
+                {
+                    href:"a1",
+                    src:"//img14.360buyimg.com/n9/s40x40_jfs/t2800/229/4042245524/97334/6c1dc083/57a435ebN4d5f6643.jpg",
+                    tit:"1200M【全新外观】"
+                },{
+                    href:"a1",
+                    src:"//img11.360buyimg.com/n9/s40x40_jfs/t15241/83/1989332185/97334/6c1dc083/5a65b432N250858a9.jpg",
+                    tit:"1200M新品【千兆端口】"
+                },{
+                    href:"a1",
+                    src:"//img13.360buyimg.com/n9/s40x40_jfs/t619/6/1460623340/50869/f877cb8e/54f5137eN7855559b.jpg",
+                    tit:"900M【双频无线】"
+                },{
+                    href:"a1",
+                    src:"//img14.360buyimg.com/n9/s40x40_jfs/t4939/250/1234089134/68017/c73611d4/58eee54fNf1c8bcbb.jpg",
+                    tit:"750M【11AC双频】"
+                },{
+                    href:"a1",
+                    src:"//img14.360buyimg.com/n9/s40x40_jfs/t7228/285/1136704749/91161/2a7a3e0b/599a7d7aN19069ffd.jpg",
+                    tit:"2600M【高端家用 千兆端口】"
+                }
+            ],
+            goods_pictures:[
+                {
+                    src1:"//img14.360buyimg.com/n1/s450x450_jfs/t2800/229/4042245524/97334/6c1dc083/57a435ebN4d5f6643.jpg",
+                    src2:"//img14.360buyimg.com/n5/s54x54_jfs/t2800/229/4042245524/97334/6c1dc083/57a435ebN4d5f6643.jpg"
+                },{
+                    src1:"//img14.360buyimg.com/n1/s450x450_jfs/t2848/308/4000266744/87380/2f15a35b/57a435f8Nda4205c6.jpg",
+                    src2:"//img14.360buyimg.com/n5/s54x54_jfs/t2848/308/4000266744/87380/2f15a35b/57a435f8Nda4205c6.jpg"
+                },{
+                    src1:"//img14.360buyimg.com/n1/s450x450_jfs/t2731/112/4004518202/85906/a45454d8/57a435ffNe46f74a2.jpg",
+                    src2:"//img14.360buyimg.com/n5/s54x54_jfs/t2731/112/4004518202/85906/a45454d8/57a435ffNe46f74a2.jpg"
+                },{
+                    src1:"//img14.360buyimg.com/n1/s450x450_jfs/t3196/337/91120194/141632/b9e35e0d/57a43604N2082248a.jpg",
+                    src2:"//img14.360buyimg.com/n5/s54x54_jfs/t3196/337/91120194/141632/b9e35e0d/57a43604N2082248a.jpg"
+                },{
+                    src1:"//img14.360buyimg.com/n1/s450x450_jfs/t3253/331/86524011/54218/64edfbc3/57a43608N8d345bca.jpg",
+                    src2:"//img14.360buyimg.com/n5/s54x54_jfs/t3253/331/86524011/54218/64edfbc3/57a43608N8d345bca.jpg"
+                },{
+                    src1:"//img14.360buyimg.com/n1/s450x450_jfs/t2848/356/4003991949/98044/945df270/57a4360dN0e24b426.jpg",
+                    src2:"//img14.360buyimg.com/n5/s54x54_jfs/t2848/356/4003991949/98044/945df270/57a4360dN0e24b426.jpg"
+                }
+            ],
+            menu_lists:[
+                {
+                    url:"x1",
+                    tit:"首页"
+                },{
+                    url:"x2",
+                    tit:"路由器"
+                },{
+                    url:"x3",
+                    tit:"网卡"
+                },{
+                    url:"x4",
+                    tit:"交换器"
+                },{
+                    url:"x5",
+                    tit:"企业产品"
+                }
+            ],
+            hot_words:[{
+                href:"x1",
+                spell:"今日活动"
+            },{
+                href:"x2",
+                spell:"360共享路由"
+            },{
+                href:"x3",
+                spell:"360路由二代"
+            },{
+                href:"x4",
+                spell:"无线网卡"
+            },{
+                href:"x5",
+                spell:"荣耀路由"
+            },{
+                href:"x6",
+                spell:"TPLINK"
+            }]
+        },
+        methods:{
+            turn1:function(a){
+                this.current_index1+=a;
+                if(this.current_index1<=-1){
+                    this.current_index1 = 0;
+                }
+                if(this.current_index1>=1){
+                    this.current_index1 = 1;
+                }
+            },
+            commonIndex:function(index){
+                this.current_index = index;
+            },
+            count_plus:function(){
+                this.count++;
+            },
+            count_jian: function(){
+                if(this.count>1){
+                    this.count--;
+                }
+            }
+        }
+    })
+</script>
+</html>

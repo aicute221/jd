@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cart</title>
+    <link href="../css/index.css" type="text/css" rel="stylesheet">
+    <link href="../css/cart.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div id="cart">
+    <div class="top">
+        <span>京东首页</span>
+        <span class="place">北京</span>
+        <span class="log">您好，请登录</span>
+        <span id="register">免费注册</span>
+        <ul id="my">
+            <span class="ge"></span>
+            <li>我的订单</li>
+            <span class="ge"></span>
+            <li>我的京东</li>
+            <span class="ge"></span>
+            <li>京东会员</li>
+            <span class="ge"></span>
+            <li>企业采购</li>
+            <span class="ge"></span>
+            <li>客户服务</li>
+            <span class="ge"></span>
+            <li>网站导航</li>
+            <span class="ge"></span>
+            <li>手机京东</li>
+        </ul>
+    </div>
+    <div class="cart-search">
+        <div class="search-left">
+            <a href="http://jd.com" class="index"></a>
+            <a href="xxx" class="car">购物车</a>
+        </div>
+        <div class="search-right">
+            <input type="text">
+            <input type="button" value="搜索">
+        </div>
+    </div>
+    <div class="commodity">
+        <div class="fixed">
+            <div class="fixed-tit">
+                <a href="x1">全部商品00</a>
+                <a href="x2">京东大药房</a>
+            </div>
+            <div class="fixed-pro">
+                <input type="checkbox">
+                <span class="choose-all">全选</span>
+                <span>商品</span>
+                <span class="unit-price-tit">单价</span>
+                <span>数量</span>
+                <span class="subtotal-tit">小计</span>
+                <span>操作</span>
+            </div>
+        </div>
+        <div class="shopping">
+            <div class="shop-shopping">
+                <div class="shop-tit">
+                    <input type="checkbox">
+                    <a>京东自营</a>
+                </div>
+                <div class="shop-goods">
+                    <div class="shop-good" v-bind:class="checked ? 'checked' : ''">
+                        <input type="checkbox" v-model="checked">
+                        <img src="//img10.360buyimg.com/cms/s80x80_jfs/t2800/229/4042245524/97334/6c1dc083/57a435ebN4d5f6643.jpg">
+                        <div class="goods-mess">
+                            <div>
+                                <a href="xxx">TP-LINK TL-WDR6320 1200M 11AC双频智能无线路由器 无线穿墙</a>
+                            </div>
+                            <span>
+                                <i></i>
+                                <span>选包装</span>
+                            </span>
+                        </div>
+                        <span class="type">颜色：1200M【全新外观</span>
+                        <div class="unit-price">
+                            <span class="price-num">￥{{price}}</span>
+                        </div>
+                        <div class="unit-num">
+                            <span class="num-1" v-on:click="numReduce">-</span><input type="text" v-bind:value="num"><span class="num-plus" v-on:click="numPlus">+</span>
+                        </div>
+                        <div class="subtotal-tot">
+                            <span class="tot-money">￥{{unitMoney}}</span>
+                            <span class="tot-weight">{{unitWeight}}kg</span>
+                        </div>
+                        <div class="deal">
+                            <a href="x1">删除</a>
+                            <a href="x2">移到我的关注</a>
+                            <a href="x3">加到我的关注</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="choose">
+                    <div class="all-choose">
+                        <input type="checkbox">
+                        全选
+                    </div>
+                    <div class="operation">
+                        <a href="xx1">删除选中的商品</a>
+                        <a href="xx2">移到我的关注</a>
+                        <a href="xx3" class="clear-car">清理购物车</a>
+                    </div>
+                    <div class="count-all">
+                        <div class="balance">
+                            <a>去结算</a>
+                        </div>
+
+                        <div class="count-money">
+                            <div>
+                                <span>总价:</span>
+                                <span class="money-count">￥0.00</span>
+                            </div>
+                            <div>
+                                <span>已节省:</span>
+                                <span>-￥0.00</span>
+                            </div>
+                        </div>
+
+                        <div class="count-num">
+                            已选择
+                            <span class="tot-num">{{totNum}}</span>
+                            件商品
+                            <i class="up"></i>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    var vm = new Vue({
+        el:"#cart",
+        data:{
+            num:"1",
+            price:"149.00",
+            weight:"0.745",
+            checked:false,
+        },
+        methods:{
+            numReduce:function(){
+                if(this.num > 1){
+                    this.num--;
+                }else{
+                    this.num=1;
+                }
+            },
+            numPlus: function(){
+                this.num++;
+            }
+
+        },
+        computed:{
+            unitMoney: function(){
+                let total = parseFloat(this.price)*parseInt(this.num);
+                return total;
+            },
+            unitWeight: function(){
+                var total = parseFloat(this.weight)*parseInt(this.num);
+                return total
+            },
+            totNum: function(){
+                let total = 0;
+                if (this.checked) {
+                    total+=parseInt(this.num);
+                }
+                return total
+            }
+        }
+    })
+</script>
+</html>

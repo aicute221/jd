@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link href="../css/index.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div id="dog">
+    <div class="top">
+        <span id="place">北京</span>
+        <span class="log">您好，请登录</span>
+        <span id="register">免费注册</span>
+        <ul id="my">
+            <span class="ge"></span>
+            <li>我的订单</li>
+            <span class="ge"></span>
+            <li>我的京东</li>
+            <span class="ge"></span>
+            <li>京东会员</li>
+            <span class="ge"></span>
+            <li>企业采购</li>
+            <span class="ge"></span>
+            <li>客户服务</li>
+            <span class="ge"></span>
+            <li>网站导航</li>
+            <span class="ge"></span>
+            <li>手机京东</li>
+        </ul>
+    </div>
+
+    <header>
+        <a href="##"><img src="//misc.360buyimg.com/mtd/pc/index_2017/2.1.0/static/images/sprite.head@2x.png"></a>
+        <div>
+            <div>
+                <input type="text" placeholder="游戏主机" id="write">
+                <input type="text" value="📷" id="camera">
+                <input type="submit" id="mir" value="🔍">
+                <input type="text" value="我的购物车" id="car">
+            </div>
+            <div>
+                <ul>
+                    <li>111</li>
+                    <li>221865</li>
+                    <li>3331</li>
+                    <li>666</li>
+                    <li>00099</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <ul id="lot">
+                <li>秒杀</li>
+                <li>优惠券</li>
+                <li>PLUS会员</li>
+                <li>闪购</li>
+                <span class="ge ge2"></span>
+                <li>拍卖</li>
+                <li>京东服饰</li>
+                <li>京东超市</li>
+                <span class="ge ge2"></span>
+                <li>全球购</li>
+                <li>京东金融</li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="menu">
+        <ul class="list">
+            <li><a href="appliance">家用电器</a></li>
+            <li><a href="phone">手机</a>/<a href="yunying">运营商</a>/<a href="shuma">数码</a></li>
+            <li><a href="computer">电脑</a>/<a href="deli">办公</a></li>
+            <li><a href="home">家居</a>/<a href="furniture">家具</a></li>
+            <li><a href="man">男装</a>/<a href="woman">女装</a></li>
+            <li><a href="appliance">家用电器</a></li>
+            <li><a href="phone">手机</a>/<a href="yunying">运营商</a>/<a href="shuma">数码</a></li>
+            <li><a href="computer">电脑</a>/<a href="deli">办公</a></li>
+            <li><a href="home">家居</a>/<a href="furniture">家具</a></li>
+            <li><a href="man">男装</a>/<a href="woman">女装</a></li>
+            <li><a href="appliance">家用电器</a></li>
+            <li><a href="phone">手机</a>/<a href="yunying">运营商</a>/<a href="shuma">数码</a></li>
+            <li><a href="computer">电脑</a>/<a href="deli">办公</a></li>
+            <li><a href="home">家居</a>/<a href="furniture">家具</a></li>
+            <li><a href="man">男装</a>/<a href="woman">女装</a></li>
+            <li><a href="appliance">家用电器</a></li>
+            <li><a href="phone">手机</a>/<a href="yunying">运营商</a>/<a href="shuma">数码</a></li>
+        </ul>
+        <div class="picture">
+            <span class="turn" id="picture_left" v-on:click="changeOpacity(-1)">&lt</span>
+            <span class="turn" id="picture_right" v-on:click="changeOpacity(1)">&gt</span>
+            <div class="tab">
+                <span v-on:click="turnPic(0)"></span>
+                <span v-on:click="turnPic(1)"></span>
+                <span v-on:click="turnPic(2)"></span>
+            </div>
+            <a href="" id="picture_1" v-show="index == 0">
+                <img src="https://m.360buyimg.com/babel/jfs/t24190/232/1623186104/99627/3acb98d2/5b63fa8aNb902ce78.jpg">
+            </a>
+            <a href="" id="picture_2" v-show="index == 1">
+                <img src="https://m.360buyimg.com/babel/jfs/t24247/169/1026839240/150474/3e33c53e/5b4c6daeN55130b4b.jpg">
+            </a>
+            <a href="" id="picture_3" v-show="index == 2">
+                <img src="https://m.360buyimg.com/babel/jfs/t19870/256/2271599544/98875/ef54943a/5b67b43dNa8efb55c.jpg">
+            </a>
+        </div>
+        <div class="smallp">
+            <a href="computer"><img src="https://img11.360buyimg.com/babel/s380x300_jfs/t21466/346/2426541839/37850/9200a465/5b592bc7N3bc82e65.jpg!q90!cc_190x150"></a>
+            <a href="book"><img src="https://img10.360buyimg.com/babel/s380x300_jfs/t24328/186/1286755180/25455/560f0e56/5b5a7f09Nbe4005a8.jpg!q90!cc_190x150"></a>
+            <a href="xx"><img src="https://img1.360buyimg.com/pop/s380x300_jfs/t22423/61/218837919/53777/74268444/5b041dfaN6f737a4e.jpg!q90!cc_190x150"></a>
+        </div>
+        <div class="des">
+            <div id="login">
+                <a id="head_picture" href="log_in"><img src="https://misc.360buyimg.com/mtd/pc/common/img/no_login.jpg"></a>
+                <p>Hi,欢迎来到京东</p>
+                <p id="user_login">
+                    <a href="xx">注册</a>
+                    <a href="xx">登录</a>
+                </p>
+                <span id="new_people">新人福利</span>
+                <span id="club">PLUS会员</span>
+            </div>
+            <div class="sale">
+                <span class="ge ge3"></span>
+                <span class="sale_title"
+                      v-for="name,index in names"
+                      v-on:mouseover="overShow(index)">{{name}}</span>
+                <ul v-for="list_item,index in list" v-show="current_index === index">
+                    <li v-for="des_item in list_item.des">
+                        <a v-bind:href="des_item.url" >{{des_item.text}}</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="seckill">
+        <div id="seckill_item">
+            <a>
+                <p id="kill_p">京东秒杀</p>
+                <p id="kill_subtitle">FLASH DEALS</p>
+                <img id="kill_ico" src="url(//misc.360buyimg.com/mtd/pc/index_2017/2.1.0/static/images/sprite.seckill@2x.png)">
+                <p id=kill_des>本场距离结束还剩</p>
+
+            </a>
+        </div>
+
+        <div id="kill-window">
+            <span id="kill_left" class="turn" v-on:click="killPicture(-4)" >&lt</span>
+            <span id="kill_right" class="turn" v-on:click="killPicture(4)">&gt</span>
+            <div id="kill_pic" v-bind:style="{left: -index2*198+'px'}">
+                <div class="kill_picture">
+                    <a href="xx">
+                        <img src="https://img11.360buyimg.com/mobilecms/s280x280_jfs/t20977/129/2207742128/266013/7ae8d3f/5b4c4ce3N064f74c5.jpg!q90.webp">
+                        <p class="picture_des">南极人颈椎lallalallalallalallalallalalallalalalallal</p>
+                        <p class="kill_price">
+                            <span class="current_price">￥109.00</span>
+                            <span class="pre_price">￥<del>299.00</del></span>
+                        </p>
+                    </a>
+                </div>
+                <div class="kill_picture">
+                    <a href="xx">
+                        <img src="https://img11.360buyimg.com/mobilecms/s280x280_jfs/t23359/304/1741001591/199082/c7a3c775/5b681522Nfc1c3019.jpg!q90.webp">
+                        <p class="picture_des">天马组合柜子lallalallalallalallalallalalallalalalallal</p>
+                        <p class="kill_price">
+                            <span class="current_price">￥89.90</span>
+                            <span class="pre_price">￥<del>139.0</del></span>
+                        </p>
+                    </a>
+                </div>
+                <div class="kill_picture">
+                    <a href="xx">
+                        <img src="https://img30.360buyimg.com/mobilecms/s280x280_jfs/t12424/150/2372038948/17182/a5cd431f/5a3b6e6cNa6ca1c81.jpg!q90.webp">
+                        <p class="picture_des">充电宝lallalallalallalallalallalalallalalalallal</p>
+                        <p class="kill_price">
+                            <span class="current_price">￥75.00</span>
+                            <span class="pre_price">￥<del>79.00</del></span>
+                        </p>
+                    </a>
+                </div>
+                <div class="kill_picture">
+                    <a href="xx">
+                        <img src="https://img11.360buyimg.com/mobilecms/s280x280_jfs/t8467/328/1859535486/135158/4a22a897/59c0e3f6Nce00e343.jpg!q90.webp">
+                        <p class="picture_des">双频路由器lallalallalallalallalallalalallalalalallal</p>
+                        <p class="kill_price">
+                            <span class="current_price">￥159.00</span>
+                            <span class="pre_price">￥<del>199.00</del></span>
+                        </p>
+                    </a>
+                </div>
+                <div class="kill_picture">
+                    <a href="xx">
+                        <img src="https://img11.360buyimg.com/mobilecms/s280x280_jfs/t20992/44/2617501272/147457/34b77ebb/5b603a22Ndf793521.jpg!q90.webp">
+                        <p class="picture_des">双频路由器lallalallalallalallalallalalallalalalallal</p>
+                        <p class="kill_price">
+                            <span class="current_price">￥159.00</span>
+                            <span class="pre_price">￥<del>199.00</del></span>
+                        </p>
+                    </a>
+                </div>
+                <div class="kill_picture">
+                    <a href="xx">
+                        <img src="https://img13.360buyimg.com/mobilecms/s280x280_jfs/t22003/104/2603107595/140620/39c3ee73/5b5edb82Ndaaa3e08.jpg!q90.webp">
+                        <p class="picture_des">双频路由器lallalallalallalallalallalalallalalalallal</p>
+                        <p class="kill_price">
+                            <span class="current_price">￥159.00</span>
+                            <span class="pre_price">￥<del>199.00</del></span>
+                        </p>
+                    </a>
+                </div>
+                <div class="kill_picture">
+                    <a href="xx">
+                        <img src="https://img12.360buyimg.com/mobilecms/s280x280_jfs/t23587/109/1374645690/396708/f54fe4ee/5b5c2067Nb1ef942e.jpg!q90.webp">
+                        <p class="picture_des">双频路由器lallalallalallalallalallalalallalalalallal</p>
+                        <p class="kill_price">
+                            <span class="current_price">￥159.00</span>
+                            <span class="pre_price">￥<del>199.00</del></span>
+                        </p>
+                    </a>
+                </div>
+                <div class="kill_picture">
+                    <a href="xx">
+                        <img src="https://img12.360buyimg.com/mobilecms/s280x280_jfs/t20149/189/2609169604/200726/5e37c827/5b5ea8dcN18b8e7e9.jpg!q90.webp">
+                        <p class="picture_des">双频路由器lallalallalallalallalallalalallalalalallal</p>
+                        <p class="kill_price">
+                            <span class="current_price">￥159.00</span>
+                            <span class="pre_price">￥<del>199.00</del></span>
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="box">
+            <div id="wrap">
+                <div id="slide-wrap" v-bind:style="{left:-index1*202+'px'}">
+                    <a href="xx"><img src="https://img10.360buyimg.com/mobilecms/s360x520_jfs/t24217/69/1743741799/133046/c0d518d9/5b69761aN103c12f0.jpg!q90!cc_180x260"></a>
+                    <a href="xx"><img src="https://img12.360buyimg.com/mobilecms/s360x520_jfs/t23545/198/1849288094/97558/5948662/5b6ab1b9N9e7b835a.jpg!q90!cc_180x260"></a>
+                </div>
+                <div class="tab">
+                    <span v-on:click="turnImg(0)"></span>
+                    <span v-on:click="turnImg(1)"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="three-box">
+        <div class="s-box">
+            <div class="s-box-top">
+                <a href="xx">
+                    <h3>排行榜</h3>
+                    <img src="url(data:image/png;base64,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)">
+                    <span>专属你的购物指南</span>
+                </a>
+            </div>
+            <div id="s-box-middle">
+                <div class="charts">
+                    <span v-for="chart,index in charts" class="chart" v-on:mouseover="changeChartList(index)">{{chart}}</span>
+                </div>
+                <div v-for="chartList,index in chartLists" v-show="index3 === index">
+                    <ul v-bind:style="{left: -chartList.num*390+'px'}">
+                        <li v-for="des_item in chartList.des">
+                            <a>
+                                <img v-bind:src="des_item.url">
+                                <span class="number" v-bind:style="{color: des_item.color}">{{des_item.number}}</span>
+                                <span class="sub-tit">{{des_item.sub}}</span>
+                            </a>
+                        </li>
+                        <div class="last-half">
+                            <li v-for="des2_item in chartList.des2">
+                                <a>
+                                    <img v-bind:src="des2_item.url">
+                                    <span class="number" v-bind:style="{color: des2_item.color}">{{des2_item.number}}</span>
+                                    <span class="sub-tit">{{des2_item.sub}}</span>
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                    <div class="tab">
+                        <span v-on:click="chartList.num=0"></span>
+                        <span v-on:click="chartList.num=1"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="s-box">
+            <div class="s-box-top">
+                <a href="xx">
+                    <h3>会买专辑</h3>
+                    <img src="url(data:image/png;base64,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)">
+                    <span>甄选优质好物</span>
+                </a>
+            </div>
+            <div class="middle">
+                <div class="s-box-middle2" v-bind:style="{left: -index4*390+'px'}">
+                    <a class="link-picture"  v-for="item,index in items" v-bind:href="item.href">
+                        <div>
+                            <img v-bind:src="item.url" class="img1">
+                            <img v-bind:src="item.url1" class="img2">
+                            <img v-bind:src="item.url2" class="img2">
+                            <img v-bind:src="item.url3" class="img2">
+                            <h3>{{item.tit}}</h3>
+                            <span>{{item.sub_tit}}</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="tab">
+                    <span v-on:click="changeOne(0)"></span>
+                    <span v-on:click="changeOne(1)"></span>
+                </div>
+            </div>
+            <span class="turn" v-on:click="pageTurn(-1)" >&lt</span>
+            <span class="turn" id="right1" v-on:click="pageTurn(1)">&gt</span>
+        </div>
+
+        <div class="s-box">
+            <div class="s-box-top">
+                <a href="xx">
+                    <h3>领券中心</h3>
+                    <img src="url(data:image/png;base64,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)">
+                    <span>前往领券中心</span>
+                </a>
+            </div>
+            <div class="middle">
+                <div class="s-box-middle2" v-bind:style="{left: -index5*390+'px'}">
+                    <div v-for="coupon in coupons" class="coupon">
+                        <a v-for="des_item in coupon.des" class="coupon-item" v-bind:href="des_item.href" v-bind:style="{backgroundColor:des_item.bg}">
+                            <div id="div-img">
+                                <img v-bind:src="des_item.src">
+                            </div>
+                            <div id="coupon-middle">
+                                <div class="uni-pri">
+                                    <span class="uni">￥</span>
+                                    <span class="coupon-price">{{des_item.price}}</span>
+                                </div>
+                                <span class="total-price">满{{des_item.total}}可用</span>
+                                <div class="coupon-sub">{{des_item.sub}}</div>
+                            </div>
+                            <div id="coupon-more">
+                                <span>{{des_item.more}}</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="tab">
+                    <span v-on:click="changeTwo(0)"></span>
+                    <span v-on:click="changeTwo(1)"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="three-box">
+        <div class="s-box">
+            <div class="s-box-top">
+                <a href="xx">
+                    <h3>觅Me</h3>
+                    <img src="url(data:image/png;base64,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)">
+                    <span>探索生活</span>
+                </a>
+            </div>
+            <div class="middle">
+                <div class="s-box-middle2" v-bind:style="{left: -index6*392+'px'}">
+                    <a v-for="look in looks" class="lookfor" v-bind:href="look.href">
+                        <div>
+                            <img v-bind:src="look.src">
+                            <p class="look-tit">{{look.tit}}</p>
+                            <p>{{look.sub_tit}}</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="tab">
+                    <span v-on:click="changeThree(0)"></span>
+                    <span v-on:click="changeThree(1)"></span>
+                </div>
+            </div>
+            <span class="turn" v-on:click="turnThree(-1)" >&lt</span>
+            <span class="turn" id="right2" v-on:click="turnThree(1)">&gt</span>
+        </div>
+
+        <div class="s-box">
+            <div class="s-box-top">
+                <a href="xx">
+                    <h3>发现好货</h3>
+                    <img src="url(data:image/png;base64,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)">
+                    <span>发现品质生活</span>
+                </a>
+            </div>
+            <div class="middle">
+                <a v-for="four in fours" v-bind:href="four.href" class="little-four">
+                    <div>
+                        <img v-bind:src="four.src">
+                        <span class="four-one">{{four.tit}}</span>
+                        <span>{{four.sub_tit}}</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="s-box">
+            <div class="s-box-top">
+                <a href="xx">
+                    <h3>会逛</h3>
+                    <img src="url(data:image/png;base64,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)">
+                    <span>你想逛的都在这里</span>
+                </a>
+            </div>
+            <div class="middle">
+                <a class="f-picture">
+                    <img src="https://img12.360buyimg.com/babel/s700x500_jfs/t24766/152/694864697/36540/4544a9fb/5b790be4N32c0383c.jpg!q90!cc_350x250.webp">
+                    <div>
+                        <img src="https://img12.360buyimg.com/babel/s220x220_jfs/t26092/302/704312335/8036/7be4d63c/5b790c2aN9fd185a5.jpg!q90!cc_110x110.webp">
+                        <img src="https://img14.360buyimg.com/babel/s220x220_jfs/t24940/125/718846076/16567/c2046bf5/5b790c22N2c18c4d9.jpg!q90!cc_110x110.webp">
+                        <img src="https://img12.360buyimg.com/babel/s220x220_jfs/t25912/338/702089251/44145/39ca361a/5b790c44N96ad68b7.jpg!q90!cc_110x110.webp">
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="divide">
+        <div>
+            <span class="divide-span"></span>
+        </div>
+        <h3 class="divide-h3">智能先锋</h3>
+        <div>
+            <span class="divide-span"></span>
+        </div>
+    </div>
+    <div class="three-box">
+        <div class="s-box">
+            <div class="s-box-top">
+                <a href="xx">
+                    <h3>手机频道</h3>
+                    <img src="url(data:image/png;base64,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)">
+                    <span>一个极客的诞生</span>
+                </a>
+            </div>
+            <div class="middle">
+                <div class="img-middle">
+                    <a v-for="imgb in imgbs" class="imgb" v-bind:href="imgb.href">
+                        <div>
+                            <img v-bind:src="imgb.src">
+                        </div>
+                    </a>
+                    <div class="imgs-bor">
+                        <a v-for="imgs in imgss" class="imgs" v-bind:href="imgs.href">
+                            <div>
+                                <img v-bind:src="imgs.src">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="s-box">
+            <div class="s-box-top">
+                <a href="xx">
+                    <h3>新品首发</h3>
+                    <img src="url(data:image/png;base64,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)">
+                    <span>看新奇好物 必来新品首发</span>
+                </a>
+            </div>
+            <div class="middle">
+                <a class="one-picture">
+                    <div>
+                        <img src="https://img11.360buyimg.com/babel/s700x740_jfs/t21838/316/1878229952/81113/98439a1c/5b3d9672Ne2b3d5e2.png!q90!cc_350x370">
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="black">
+            <div class="black-box-right">
+                <a href="xx">
+                    <div>
+                        <img src="https://img11.360buyimg.com/babel/s340x420_jfs/t24115/248/2116385645/33586/16d85140/5b74d4f4Ne4d2fab7.jpg!q90!cc_340x420">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="three-box">
+        <div class="black">
+            <div class="black-box-left">
+                <a href="xx">
+                    <div>
+                        <img src="https://img13.360buyimg.com/da/s680x400_jfs/t15355/35/529630939/40301/f0f7bbb0/5a2f8fbdNe4a259f2.jpg!q90!cc_340x200">
+                    </div>
+                </a>
+                <a href="xx">
+                    <div>
+                        <img src="https://img13.360buyimg.com/da/s680x400_jfs/t15355/35/529630939/40301/f0f7bbb0/5a2f8fbdNe4a259f2.jpg!q90!cc_340x200">
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="s-box-2">
+            <a href="xxx">
+                <div class="two-four">
+                    <div>
+                        <span>家用好网</span>
+                        <span>好路由好WiFi</span>
+                    </div>
+                    <div>
+                        <img src="https://img11.360buyimg.com/babel/s260x260_jfs/t17533/183/678813287/162070/6ce75f66/5aa0ef25Ne2533c13.jpg!q90!cc_130x130">
+                        <img src="https://img10.360buyimg.com/babel/s260x260_jfs/t21250/217/2101261647/252886/beb152bf/5b46d23aN1349392e.jpg!q90!cc_130x130">
+                    </div>
+                </div>
+            </a>
+            <a href="xxx">
+                <div class="two-four">
+                    <div>
+                        <span>腕间智能</span>
+                        <span>腕间智能</span>
+                    </div>
+                    <div>
+                        <img src="//img11.360buyimg.com/babel/s260x260_jfs/t22705/276/2282398139/217827/ab4be27a/5b7a3560N2123ef1a.jpg!q90!cc_130x130">
+                        <img src="//img20.360buyimg.com/babel/s260x260_jfs/t22114/195/1471980376/104661/8e532c79/5b2a21fdN7462777a.jpg!q90!cc_130x130">
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="s-box">
+            <div class="s-box-top">
+                <a href="xx">
+                    <h3>智能数码</h3>
+                    <img src="url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAYAAABXuSs3AAAAAklEQVR4AewaftIAAAYbSURBVL3Be6zXZQEH4OfzPb9zABFxQsghFdE5DRYaaDljWTrTtjK11A1F07KmlX/wRzUluYQONy9lzZpoMjMtzS1rMytllpaVpilqNBQQdBreUa6Hw9sZLxsKbMG5+DxZOXkSgoKgICgICoKCoCChDCKTKIeS/SlHkLGUkWQ0pYOgdJFXKK+RVZSnyCOUx8kzFAQFQUFQEBQEBUFBtPROCx/FyZiAvXGAahC60IGCNuyBghZa+CCOxj34IzbZTS07CoqdG4Jv4AKMwmC8g3/g73gQb+FZvII2jMThGIHxOBInYBi+hlW4FbOw3i5q2VGxc8fjh/iQajF+hduwGMXOrcZS7zUO03A6DsO3MQ1fwe/sgqycPAlBQVAQFASlRa6jTCN7UlaRSym/JG9TEBQEBUFBUBAUBAVBQQZRvkiupexNWpQF5MuUQlAQFAQF0TZ9TCeiiiqqjMJ95BR0kytxKnkEG4kqqqiiiiqqqKJKNxaRq7AvOQJHks/gXrLaFlFFFW3Tx3Qiqqiix/7kLxhP3sDJ5GZ0E1VUUUUVVVRRRRVVVNHjHvIQPkcOwRnkLrxFYouoorFze2IhxuFpTMSfDLwHMAGLsR8WYgSK7TR27j4cjH/haLzo/+vQP1ZhAh7FwfgNBttOY0c34CgsxfFYa9d0Yay+K9iME/AyjsGPbKfxXsfgfLyN0/GGXbcAy3Gx/vEmTsIGnIMTvUtjmw7cgTZcg8dR7Lq70IUfYKb+8QRmoR3Xo8NWjW1mYRSWYo7d91ucrboMl+of87AEB+GbtmpUg3EmCi7UOwV3YCoazMUMRN+dozoXHXo06MAnMApLcb++uR1TVbPxLX33TzyGg3Ac2ht8GCejwZ3o1ne343wUzMMMNHqvC7/GIHwKxzYYh0PRhV/oPzfjHNX3cJm+uQWrMR6dLRyLoXgcz+hft6GF+ZiJgtl653ksw1BMaXAI9sV/DIxbcB42YSZm6r3H0IlxDUZjKJ40cG7DhdiIWZihdx7FUIxuYTQGY4WBdSOGYyYuQBeutHuWYDhaDfZBG5YYeFfjeuyF2bjW7lmEYRjZQjva8bL3x2JsRjsau+dVBO0t27QMvNNwPQbjEsyze2KrBhuwDh8wsE7HnRiCWZiHlt0zFBuxtsEbWI8DDZyzcQsazMQc1Sa7ZzzW4e0Gr2Ij9jcwzsUC1RxcrvdG4zW80WAZNuFo/e9L+Am6cDXmolvvnYg2LG/wBNbgCP3rLMxHC9fiCnTpm8lYhWcb/BXP41CM1z+m4SY0uBwzsFbfjMVheBmLGizDSgzFSfruLMxHC5fjSmzWd6diCF7Ecw1W4EbV+XqvA2diAYK5mIV1+sdF6MJC3N9gLR7GCkzAcXrn8/gxunAVrsBm/eMMHIL/4h49GtssUF2nd05DG2ZgNjbqH+24BN34Odbo0bLNXFyECbgEV9h1g/BVjMBL2Kj/XIyJWIk5tmps04UvYBMuwRS7bgO6sRwb9J/JmInNOA+bbNV4rz/jJgzFfOxl163Vv/bBXdgDd2Khd2ns6EIswWF4EMO8/wbhbozFIpxrO40dFUzBCkzEIxjh/TMCD2MKXsJx2Gg7bdPHdCKqqLIGd5MzcCCZir+RF2wRPUJUUUUVVVRRRRVVVFFlCh4gh2Al+QheI6qoom36mE5EFVX0eJP8FMeS8ZhKRuBB0mWLqKKKKqqooooqqqgyDN8l8zGcLMbh5E1bRBVVtE0f04mooooq63Er2QsfIx/HOeR1PE022yKqqKKKKqqooooe08h8nEE24Gfks1hPVFFFFW3Tx3Qiqqiiih7d5F48RKbgQHIKppJhWE5W2yKqqKJHiCqq7IOvkxtwAenEc2Qavk+6bRFVVFFFVk6ehKAgKAgKgoKgIIMp3yFTKfuRDso75GnKY+Q+ynKyjLKaoLSTAyhjyScpnyZHURqynvIiWUC5hqylICgICoKCoCCycvIkBAVBQVAQFAQFQUFCOYEcT5lIRlKGk+GUwaSdMoQUyjqykdJFCmUFWUlZTn5PeZCspSAoCAqCgqAgKIiW3vsDXsdTmIDxOAAHYA9VMBhr8AKew7+xDE/iGazTC/8DVJesK1YC3y4AAAAASUVORK5CYII=)">
+                    <span>智能潮货 嗨购不停</span>
+                </a>
+            </div>
+            <div class="middle">
+                <div class="s-box-middle2">
+                    <a class="two-line">
+                        <div>
+                            <img src="https://img10.360buyimg.com/babel/s700x360_jfs/t23650/288/2175200573/107171/f83d3ae6/5b763a66N297a8a19.jpg!q90!cc_350x180">
+                        </div>
+                    </a>
+                    <a class="two-line">
+                        <div>
+                            <img src="//img10.360buyimg.com/babel/s700x360_jfs/t22492/66/2048030276/131768/659646a6/5b73875fN3956f05a.png!q90!cc_350x180">
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="divide">
+        <div>
+            <span class="divide-span"></span>
+        </div>
+        <h3 class="divide-h3">生活百货</h3>
+        <div>
+            <span class="divide-span"></span>
+        </div>
+    </div>
+    <div class="three-box">
+        <div class="s-box">
+            <div class="s-box-top">
+                <a href="xx">
+                    <h3>京东超市</h3>
+                    <img src="url(data:image/png;base64,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)">
+                    <span>精选超值好物</span>
+                </a>
+            </div>
+            <div class="middle">
+                <div class="img-middle">
+                    <a class="imgbb" href="xx">
+                        <div>
+                            <img src="//img12.360buyimg.com/babel/s700x360_jfs/t22660/197/997998956/85092/652504db/5b4c45bfNcfd19212.jpg!q90!cc_350x180">
+                        </div>
+                    </a>
+                    <a class="imgb" href="xx">
+                        <div>
+                            <img src="//img11.360buyimg.com/babel/s340x360_jfs/t23998/27/1009560461/57611/2bcf791f/5b4c43a8Ndb67446f.jpg!q90!cc_170x180">
+                        </div>
+                    </a>
+                    <a class="imgb" href="xx">
+                        <div>
+                            <img src="//img13.360buyimg.com/babel/s340x360_jfs/t23272/158/1009314516/67198/8dad32ab/5b4c4450N40d9c9ad.jpg!q90!cc_170x180">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="s-box">
+            <div class="shop" v-for="shop_item in shop">
+                <a class="shop-info">
+                    <div class="shop-logo">
+                        <img v-bind:src="shop_item.logo">
+                    </div>
+                    <div class="shop-name">
+                        {{shop_item.name}}
+                    </div>
+                </a>
+                <a class="shop-p-b">
+                    <img v-bind:src="shop_item.src1">
+                </a>
+                <div class="shop-p-xiao">
+                    <a v-for="des_item in shop_item.des" class="shop-p-s">
+                        <div>
+                            <img v-bind:src="des_item.src">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="black">
+            <div class="black-box-right">
+                <a href="xx">
+                    <div>
+                        <img src="//img12.360buyimg.com/babel/s340x420_jfs/t23161/69/2118747993/106073/379d3a4a/5b7397f5N60246c5b.jpg!q90!cc_340x420">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="three-box">
+        <div class="black">
+            <div class="black-box-left">
+                <a href="xx">
+                    <div>
+                        <img src="//img13.360buyimg.com/da/s680x400_jfs/t16000/137/1725550875/175949/8631bc4c/5a5c14ddN644325a4.jpg!q90!cc_340x200">
+                    </div>
+                </a>
+                <a href="xx">
+                    <div>
+                        <img src="//img10.360buyimg.com/da/s680x400_jfs/t16528/70/1166636237/139762/a772857/5a4c929dNe844e693.jpg!q90!cc_340x200">
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="s-box-2">
+            <a href="xxx">
+                <div class="two-four">
+                    <div>
+                        <span>玩儿乐汇</span>
+                        <span>儿童玩具</span>
+                    </div>
+                    <div>
+                        <img src="//img10.360buyimg.com/babel/s260x260_jfs/t3451/90/758861696/258163/b95752c/58130f31Nb8582cd3.jpg!q90!cc_130x130">
+                        <img src="//img11.360buyimg.com/babel/s260x260_jfs/t1015/106/347045380/270369/ae025f19/551a4eb5N305b76e6.jpg!q90!cc_130x130">
+                    </div>
+                </div>
+            </a>
+            <a href="xxx">
+                <div class="two-four">
+                    <div>
+                        <span>撸串烧烤</span>
+                        <span>闲时撸个串儿</span>
+                    </div>
+                    <div>
+                        <img src="//img12.360buyimg.com/babel/s260x260_jfs/t2581/61/304960095/217481/aed7c556/570d1eb8Nf556fd0e.jpg!q90!cc_130x130">
+                        <img src="//img12.360buyimg.com/babel/s260x260_jfs/t6292/116/451720537/190850/19aaee3e/593fb879Nadbaa32f.jpg!q90!cc_130x130">
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="s-box">
+            <div class="s-box-top">
+                <a href="xx">
+                    <h3>吃喝玩乐</h3>
+                    <img src="url(data:image/png;base64,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)">
+                    <span>为你挑选最好的</span>
+                </a>
+            </div>
+            <div class="middle">
+                <div class="img-middle">
+                    <a class="imgbb" href="xx">
+                        <div>
+                            <img src="//img14.360buyimg.com/babel/s700x360_jfs/t22378/148/2615602960/73366/7629dd3d/5b5e6df2Nb69fa771.jpg!q90!cc_350x180">
+                        </div>
+                    </a>
+                    <a class="imgb" href="xx">
+                        <div>
+                            <img src="//img12.360buyimg.com/babel/s340x360_jfs/t23179/164/1390863780/69161/b8248f2f/5b5e6cc9N1bf473e8.jpg!q90!cc_170x180">
+                        </div>
+                    </a>
+                    <a class="imgb" href="xx">
+                        <div>
+                            <img src="//img10.360buyimg.com/babel/s340x360_jfs/t25366/244/18971715/104619/b4cdd256/5b62de16Na90f232f.jpg!q90!cc_170x180">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="divide">
+        <div>
+            <span class="divide-span"></span>
+        </div>
+        <h3 class="divide-h3">JOY寻宝</h3>
+        <div>
+            <span class="divide-span"></span>
+        </div>
+    </div>
+    <div class="six-box">
+        <div v-for="scene_item in scene" class="scene">
+            <a v-bind:href="scene_item.href">
+                <div class="scene-top">
+                    <div>
+                        <img v-bind:src="scene_item.src">
+                        <h4>
+                            {{scene_item.tit}}
+                            <span>{{scene_item.sub_tit}}</span>
+                        </h4>
+                    </div>
+                    <div class="black-border"></div>
+                </div>
+                <div class="scene-bottom">
+                    <img v-for="src_item in scene_item.srcs" v-bind:src="src_item.src">
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="divide">
+        <div>
+            <span class="divide-span"></span>
+        </div>
+        <h3 class="divide-h3">特色推荐</h3>
+        <div>
+            <span class="divide-span"></span>
+        </div>
+    </div>
+    <div class="three-box-circle">
+        <div class="view">
+            <div class="scroll" v-bind:style="{left: -index7*400+'px'}">
+                <a class="s-box" v-for="circle_item,index in circle" v-bind:href="circle_item.href">
+                    <div class="s-box-top">
+                        <h3>{{circle_item.tit}}</h3>
+                        <img src="url(data:image/png;base64,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)">
+                        <span>{{circle_item.sub_tit}}</span>
+                    </div>
+                    <div class="middle3">
+                        <img v-bind:src="circle_item.src">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="tab">
+            <span v-on:click="changeSeven(0)"></span>
+            <span v-on:click="changeSeven(3)"></span>
+            <span v-on:click="changeSeven(6)"></span>
+        </div>
+        <span class="turn" v-on:click="turnSeven(-3)">&lt</span>
+        <span class="turn" id="right3" v-on:click="turnSeven(3)">&gt</span>
+    </div>
+
+    <div class="divide">
+        <div>
+            <span class="divide-span"></span>
+        </div>
+        <h3 class="divide-h3">京东直播</h3>
+        <div>
+            <span class="divide-span"></span>
+        </div>
+    </div>
+    <div class="three-box">
+        <div v-for="live in lives" class="live">
+            <div v-for="item,index in live.items">
+                <div v-if="index === 1">
+                    <a v-for="des_item in item.des" class="live-big">
+                        <img v-bind:src="des_item.src">
+                        <span class="live-tit-big">{{des_item.tit}}</span>
+                        <span class="live-tit">{{des_item.sub_tit}}</span>
+                    </a>
+                </div>
+                <div v-if="index !== 1">
+                    <a v-for="des_item in item.des" class="live-small">
+                        <img v-bind:src="des_item.src">
+                        <span class="live-tit">{{des_item.tit}}</span>
+                    </a>
+                </div>
+            </div>
+    </div>
+</div>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    var vm = new Vue({
+        el:'#dog',
+        data:{
+            names:[
+
+                "促销","公告"
+            ],
+            charts:[
+                "手机通讯","厨房小电","大家电","饮料冲调","休闲食品"
+            ],
+            current_index: 0,
+            lives:[
+                {
+                    items:[
+                        {
+                            des:[
+                                {
+                                    src:"//img12.360buyimg.com/live/s340x380_jfs/t22714/261/2351161919/292118/4fac0e21/5b7bd906N9143e57e.jpg!q90!cc_170x190.webp",
+                                    tit:"防晒0元购"
+                                },{
+                                    src:"//img12.360buyimg.com/live/s340x380_jfs/t25621/96/949223714/88904/d52c44ab/5b82a22bN45d5ef32.jpg!q90!cc_170x190.webp",
+                                    tit:"一家坚持原创手工的店铺"
+                                },{
+                                    src:"//img12.360buyimg.com/live/s340x380_jfs/t23572/162/2119970701/64704/b336aee3/5b76239dNdd2b4025.jpg!q90!cc_170x190.webp",
+                                    tit:"缅甸天然翡翠手镯"
+                                },{
+                                    src:"//img12.360buyimg.com/live/s340x380_jfs/t24259/277/2034605212/60575/b8d93b41/5b728039N626daf38.jpg!q90!cc_170x190.webp",
+                                    tit:"单品满199减60元"
+                                }
+                            ]
+                        },{
+                            des:[
+                                {
+                                    src:"//img12.360buyimg.com/live/s700x780_jfs/t25222/64/873812293/250853/9a5b6391/5b7e51adNa4abcdeb.jpg!q90!cc_350x390.webp",
+                                    tit:"各种风格美饰潮我看",
+                                    sub_tit:"抢无门槛券 秋尚新 潮流搭配"
+                                }
+                            ]
+                        },{
+                            des:[
+                                {
+                                    src:"//img12.360buyimg.com/live/s340x380_jfs/t23515/236/2261258413/145088/2dac0421/5b794dffN8f733782.jpg!q90!cc_170x190.webp",
+                                    tit:"逛市场代收货淘漏"
+                                },{
+                                    src:"//img12.360buyimg.com/live/s340x380_jfs/t27235/353/59092019/280163/2cd10b66/5b82c2d7N4d0d502c.jpg!q90!cc_170x190.webp",
+                                    tit:"美女主播“血拼”珠宝市场"
+                                },{
+                                    src:"//img12.360buyimg.com/live/s340x380_jfs/t26836/194/4157912/283957/4ea7b642/5b7fe731Nd0b2de79.jpg!q90!cc_170x190.webp",
+                                    tit:"玉种繁多 物美价廉"
+                                },{
+                                    src:"//img12.360buyimg.com/live/s340x380_jfs/t26275/141/67338310/310282/f314db3f/5b836f22N08df1062.jpg!q90!cc_170x190.webp",
+                                    tit:"满48元 包邮  直播专享惠"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            circle:[
+                {
+                    href:"xxx1",
+                    tit:"司法拍卖",
+                    sub_tit:"法院好物 公开抢拍",
+                    src:"//img11.360buyimg.com/babel/s700x500_jfs/t12547/128/70849579/20593/52db75df/5a02df29Nd171bcd6.jpg!q90!cc_350x250"
+                },{
+                    href:"xxx1",
+                    tit:"京东金融",
+                    sub_tit:"会理财 懂生活",
+                    src:"//img14.360buyimg.com/babel/s700x500_jfs/t25033/354/807531787/50638/65c35712/5b7cb871N52e940a9.jpg!q90!cc_350x250"
+                },{
+                    href:"xxx1",
+                    tit:"京东扶贫",
+                    sub_tit:"实特产 助扶贫",
+                    src:"//img10.360buyimg.com/babel/s700x500_jfs/t23899/300/852272489/54956/7a044416/5b45d71aN25e2776b.jpg!q90!cc_350x250"
+                },{
+                    href:"xxx1",
+                    tit:"企业采购",
+                    sub_tit:"9.9元抢户外大牌",
+                    src:"//img13.360buyimg.com/babel/s700x500_jfs/t19294/44/1781409077/19698/fed94123/5ad8c8c7N980d0ee5.jpg!q90!cc_350x250"
+                },{
+                    href:"xxx1",
+                    tit:"陪伴宝宝",
+                    sub_tit:"0元试大牌",
+                    src:"//img20.360buyimg.com/babel/s700x500_jfs/t22498/225/2365362980/42610/3a312ec5/5b7d074cN4ba7e369.jpg!q90!cc_350x250"
+                },{
+                    href:"xxx1",
+                    tit:"健康服务",
+                    sub_tit:"体验惠健康",
+                    src:"//img12.360buyimg.com/babel/s700x500_jfs/t17494/246/1465377018/41314/5c25c53f/5acb058dN681b569d.jpg!q90!cc_350x250"
+                },{
+                    href:"xxx1",
+                    tit:"京东旅行",
+                    sub_tit:"双人立减999",
+                    src:"//img13.360buyimg.com/babel/s700x500_jfs/t26065/312/764445480/70160/9474fc2c/5b7b6b7aNe899377b.jpg!q90!cc_350x250"
+                },{
+                    href:"xxx1",
+                    tit:"品牌特卖",
+                    sub_tit:"品牌限时特卖",
+                    src:"//img20.360buyimg.com/babel/s700x500_jfs/t25417/23/18146888/90374/ce9b4ada/5b62e563N2ad78c4a.jpg!q90!cc_350x250"
+                },{
+                    href:"xxx1",
+                    tit:"白条商城",
+                    sub_tit:"最高12免息",
+                    src:"//img14.360buyimg.com/babel/s700x500_jfs/t12478/192/71923900/13977/7d57c391/5a02dd52N90066fbb.jpg!q90!cc_350x250"
+                }],
+            scene:[
+                {
+                    href:"x1",
+                    src:"//img11.360buyimg.com/mobile/s780x200_jfs/t22612/333/1743279423/65196/d775f39b/5b693eb1N267e6519.jpg!q90!cc_390x100",
+                    tit:"行走万里",
+                    sub_tit:"户外装备",
+                    srcs:[
+                        {
+                           src:"//img13.360buyimg.com/babel/s220x220_jfs/t2044/238/747711128/41990/65fe7a93/5628c76cNf3c60178.jpg!q90!cc_110x110"
+                        },{
+                            src:"//img30.360buyimg.com/babel/s220x220_jfs/t1111/11/24307/234119/d7386a4a/54d88812Nf1c462db.jpg!q90!cc_110x110"
+                        },{
+                            src:"//img12.360buyimg.com/babel/s220x220_jfs/t14704/338/2456915719/116066/e74f6347/5a9e24a8Naaf28a3e.jpg!q90!cc_110x110"
+                        }
+                    ]
+                },{
+                    href:"x2",
+                    src:"//img12.360buyimg.com/mobile/s780x200_jfs/t16624/337/1900164082/20779/601dc4a7/5adddb53Ne21dafca.jpg!q90!cc_390x100",
+                    tit:"路在何方",
+                    sub_tit:"长途旅行家",
+                    srcs:[
+                        {
+                            src:"//img10.360buyimg.com/babel/s220x220_jfs/t3205/223/2388298959/177898/e1ca1e7/57e0945cN335da602.jpg!q90!cc_110x110"
+                        },{
+                            src:"//img14.360buyimg.com/babel/s220x220_jfs/t2866/81/1701919799/335144/1bde0550/57467e18Ne6e3de20.jpg!q90!cc_110x110"
+                        },{
+                            src:"//img10.360buyimg.com/babel/s220x220_jfs/t1117/353/863484183/220243/e9cc08bf/55501410N28aa44bf.jpg!q90!cc_110x110"
+                        }
+                    ]
+                },{
+                    href:"x3",
+                    src:"//img13.360buyimg.com/mobile/s780x200_jfs/t18592/283/2011585328/55358/17c45d47/5addde7eN9ca3f3e7.jpg!q90!cc_390x100",
+                    tit:"绝饰佳人",
+                    sub_tit:"我的饰界",
+                    srcs:[
+                        {
+                            src:"//img11.360buyimg.com/babel/s220x220_jfs/t2707/252/1065308800/279161/cc53c83/57328f52Ned650c7c.jpg!q90!cc_110x110"
+                        },{
+                            src:"//img12.360buyimg.com/babel/s220x220_jfs/t15295/1/1317133280/173376/c848fdf7/5a4c49adN183c5837.jpg!q90!cc_110x110"
+                        },{
+                            src:"//img11.360buyimg.com/babel/s220x220_jfs/t26884/229/69426132/209280/b07c7994/5b8392cdNa65be769.jpg!q90!cc_110x110"
+                        }
+                    ]
+                },{
+                    href:"x4",
+                    src:"//img12.360buyimg.com/mobile/s780x200_jfs/t23797/91/2094943936/109824/1768847d/5b743e4bN31ea0998.jpg!q90!cc_390x100",
+                    tit:"办公助手",
+                    sub_tit:"办公室好物",
+                    srcs:[
+                        {
+                            src:"//img14.360buyimg.com/babel/s220x220_jfs/t19849/264/1124806163/133668/1d69ff71/5b15ec31N483aa4dc.jpg!q90!cc_110x110"
+                        },{
+                            src:"//img14.360buyimg.com/babel/s220x220_jfs/t496/292/458181049/84782/c3e3d1e0/54696d10N03100ff5.jpg!q90!cc_110x110"
+                        },{
+                            src:"//img20.360buyimg.com/babel/s220x220_jfs/t20056/25/703372861/175683/2a1dc1ac/5b07d669N90a082ce.jpg!q90!cc_110x110"
+                        }
+                    ]
+                },{
+                    href:"x5",
+                    src:"//img14.360buyimg.com/mobile/s780x200_jfs/t17002/86/1946875649/17236/85596efd/5adddbc9Ne745ce69.jpg!q90!cc_390x100",
+                    tit:"吃鸡联盟",
+                    sub_tit:"必备神器",
+                    srcs:[
+                        {
+                            src:"//img11.360buyimg.com/babel/s220x220_jfs/t19033/134/1839438841/125600/2e3a0207/5ad9d439N07a672d5.jpg!q90!cc_110x110"
+                        },{
+                            src:"//img13.360buyimg.com/babel/s220x220_jfs/t23191/160/1398651551/350313/1373648e/5b5eb71eNa34fd72f.jpg!q90!cc_110x110"
+                        },{
+                            src:"//img11.360buyimg.com/babel/s220x220_jfs/t19318/250/1746195366/127213/74c4c48c/5ad57058Nf153e524.jpg!q90!cc_110x110"
+                        }
+                    ]
+                },{
+                    href:"x6",
+                    src:"//img10.360buyimg.com/mobile/s780x200_jfs/t25537/218/604060799/49910/bab1e3ed/5b7570bfNeaf428f3.jpg!q90!cc_390x100",
+                    tit:"自驾出行",
+                    sub_tit:"路上好风景",
+                    srcs:[
+                        {
+                            src:"//img14.360buyimg.com/babel/s220x220_jfs/t19219/180/1629189069/64917/fcef3c6a/5ad04d0bN9b8c44b0.jpg!q90!cc_110x110"
+                        },{
+                            src:"//img13.360buyimg.com/babel/s220x220_jfs/t14104/345/80469748/138884/83a0be4d/5a02fda7Naae6c722.jpg!q90!cc_110x110"
+                        },{
+                            src:"//img11.360buyimg.com/babel/s220x220_jfs/t3112/50/1122737531/170656/135032ac/57c6a42aN7db2fd61.jpg!q90!cc_110x110"
+                        }
+                    ]
+                }
+            ],
+            shop:[{
+                logo:"//img30.360buyimg.com/popshop/s260x90_jfs/t4048/253/431707023/7558/187b32be/584f669bN1c7c78c7.jpg!q90",
+                name:"恒都自营旗舰店",
+                src1:"//img20.360buyimg.com/babel/s700x452_jfs/t9517/11/2453831965/124290/6a5bdb01/59f81657N2ab2bfc4.jpg!q90!cr_558x360_385_0",
+                des:[
+                    {
+                        src:"//img12.360buyimg.com/mobilecms/s200x200_jfs/t3379/300/654520012/127094/8ce335e5/5811c2c5N1a5ca140.jpg!q90!cc_100x100.webp"
+                    },{
+                        src:"//img11.360buyimg.com/mobilecms/s200x200_jfs/t21433/166/2476106893/97507/fa7120ee/5b57e0e8Ne3f4f846.jpg!q90!cc_100x100.webp"
+                    },{
+                        src:"//img12.360buyimg.com/mobilecms/s200x200_jfs/t3586/172/955140469/150635/b6609c93/5817ff80N906bad34.jpg!q90!cc_100x100.webp"
+                    }
+                ]
+            }],
+            imgbs:[{
+                href:"b1",
+                src:"https://img10.360buyimg.com/babel/s340x360_jfs/t25294/9/589936415/75428/32bf2fb8/5b755c01N84282af7.jpg!q90!cc_170x180"
+            },{
+                href:"b2",
+                src:"https://img13.360buyimg.com/babel/s340x360_jfs/t22966/290/2129772514/17509/179ef3b6/5b74e25bN3b6b823b.jpg!q90!cc_170x180"
+            }],
+            imgss:[
+                {
+                    href:"s1",
+                    src:"https://img13.360buyimg.com/babel/s160x1998_jfs/t16483/122/2542720784/3429/ca0d8c92/5aaf7b8aN0421ba35.jpg!q90"
+                },{
+                    href:"s2",
+                    src:"https://img10.360buyimg.com/babel/s160x1998_jfs/t17518/143/863284411/4529/e226718b/5aaf6391Ncf18bf61.jpg!q90"
+                },{
+                    href:"s3",
+                    src:"https://img12.360buyimg.com/babel/s160x1998_jfs/t16099/61/2462195065/4120/a5e28911/5aaf664bNf2cf75f0.jpg!q90"
+                },{
+                    href:"s4",
+                    src:"https://img12.360buyimg.com/babel/s160x1998_jfs/t20809/327/583620013/4580/165d4fee/5b11242dN79066681.jpg!q90"
+                },{
+                    href:"s5",
+                    src:"//img13.360buyimg.com/babel/s160x1998_jfs/t16336/47/2421341146/4013/6d7a7f2c/5aaf64d2Na7219579.jpg!q90"
+                },{
+                    href:"s6",
+                    src:"//img11.360buyimg.com/babel/s160x1998_jfs/t15340/278/2677283657/3606/edb72ba5/5aaf6669N397d93f5.jpg!q90"
+                },{
+                    href:"s1",
+                    src:"https://img13.360buyimg.com/babel/s160x1998_jfs/t16483/122/2542720784/3429/ca0d8c92/5aaf7b8aN0421ba35.jpg!q90"
+                },{
+                    href:"s2",
+                    src:"https://img10.360buyimg.com/babel/s160x1998_jfs/t17518/143/863284411/4529/e226718b/5aaf6391Ncf18bf61.jpg!q90"
+                },{
+                    href:"s3",
+                    src:"https://img12.360buyimg.com/babel/s160x1998_jfs/t16099/61/2462195065/4120/a5e28911/5aaf664bNf2cf75f0.jpg!q90"
+                },{
+                    href:"s4",
+                    src:"https://img12.360buyimg.com/babel/s160x1998_jfs/t20809/327/583620013/4580/165d4fee/5b11242dN79066681.jpg!q90"
+                },{
+                    href:"s5",
+                    src:"//img13.360buyimg.com/babel/s160x1998_jfs/t16336/47/2421341146/4013/6d7a7f2c/5aaf64d2Na7219579.jpg!q90"
+                },{
+                    href:"s6",
+                    src:"//img11.360buyimg.com/babel/s160x1998_jfs/t15340/278/2677283657/3606/edb72ba5/5aaf6669N397d93f5.jpg!q90"
+                }
+            ],
+            fours:[
+                {
+                    href:"x1",
+                    src:"//img12.360buyimg.com/mobilecms/s220x220_jfs/t16702/106/2097893283/457361/637a5f28/5ae52afbN551e7b54.jpg!q90!cc_110x110.webp",
+                    tit:"华为智能快充手机",
+                    sub_tit:"华为新机来袭，高颜值让人爱不释手，支持全网通，方便生活、办公用手机，八核智能处理器，响应快速，任务影音流畅不卡顿，搭载安卓系统，性能强劲，多任务处理流畅不卡顿。"
+                },{
+                    src:"//img12.360buyimg.com/mobilecms/s220x220_jfs/t21028/206/388123281/129336/a20579c2/5b0ba235N577d1341.jpg!q90!cc_110x110.webp",
+                    href:"x2",
+                    tit:"飞利浦 多功能剃须刀",
+                    sub_tit:"这款飞利浦剃须刀，采用V型切剃系统设计，5向浮动的贴面剃须刀头，可根据颈部、脸颊的曲线自动调节角度，让你剃须更轻柔舒适；它还可切换卡入式胡须造型器、和控油洁面刷，多功能使用更便利。"
+                },{
+                    href:"x3",
+                    src:"https://img11.360buyimg.com/mobilecms/s220x220_jfs/t4678/133/4099263761/86002/ee200a4c/590a89dbNf3364883.jpg!q90!cc_110x110.webp",
+                    tit:"索尼MDR-1A立体声耳机",
+                    sub_tit:"采用更符合人体工学的耳垫设计，佩戴起来无粘滞感，更加地舒适。具备高音质驱动单元，可表现超过听音范围高达100kHz的高音，支持高解析度音频技术，使用户不错过任何一个音乐细节。"
+                },{
+                    href:"x4",
+                    src:"https://img11.360buyimg.com/mobilecms/s220x220_jfs/t5320/274/408177642/245156/afae152/58ff1872N9a93ca81.jpg!q90!cc_110x110.webp",
+                    tit:"博世变频混冷无霜冰箱",
+                    sub_tit:"这款冰箱玫瑰金的色彩，看起来非常高档。全新设计的一体化控制器，页面简洁美观，操作简单易用。全新零度维他保鲜功能，采用电脑精准控温，使食物解决0℃不不结冰的状态下，长久保鲜得以实现。"
+                }
+            ],
+            coupons:[
+                {
+                    des:[
+                        {
+                            href:"xx",
+                            bg:"#eeefed",
+                            src:"https://img14.360buyimg.com/babel/s140x140_jfs/t24058/330/2027059029/21708/c3bd92b9/5b72438fNd9cf4ef0.jpg!q90!cc_70x70.webp",
+                            price:"20",
+                            total: "500",
+                            sub:"全品类通用券（除特殊商品）【每天14点限量抢】",
+                            more:"更多精选好券"
+
+                        },{
+                            bg:"#e3e3e3",
+                            href:"xxx",
+                            src:"https://img13.360buyimg.com/babel/s140x140_jfs/t25459/227/567491762/27471/57892f6/5b73fcbfN560f8ee3.jpg!q90!cc_70x70.webp",
+                            price:"200",
+                            total: "2980",
+                            sub:"部分京东自营手机/配件商品",
+                            more:"更多手机数码券"
+                        } ,{
+                            bg:"#eeefed",
+                            href:"xxxx",
+                            src:"https://img11.360buyimg.com/babel/s140x140_jfs/t19033/282/228586865/385863/8cf762e3/5a6552e4N44de3018.jpg!q90!cc_70x70.webp",
+                            price:"30",
+                            total: "300",
+                            sub:"劲牌官方旗舰店",
+                            more:"更多食品饮料券"
+                        }
+                    ]
+                },{
+                    des:[
+                        {
+                            href:"xx",
+                            bg:"#eeefed",
+                            src:"https://img14.360buyimg.com/babel/s140x140_jfs/t24058/330/2027059029/21708/c3bd92b9/5b72438fNd9cf4ef0.jpg!q90!cc_70x70.webp",
+                            price:"20",
+                            total: "50",
+                            sub:"全品类通用券（除特殊商品）【每天14点限量抢】",
+                            more:"更多精选好券"
+
+                        },{
+                            bg:"#e3e3e3",
+                            href:"xxx",
+                            src:"https://img13.360buyimg.com/babel/s140x140_jfs/t25459/227/567491762/27471/57892f6/5b73fcbfN560f8ee3.jpg!q90!cc_70x70.webp",
+                            price:"200",
+                            total: "29",
+                            sub:"部分京东自营手机/配件商品",
+                            more:"更多手机数码券"
+                        } ,{
+                            bg:"#eeefed",
+                            href:"xxxx",
+                            src:"https://img11.360buyimg.com/babel/s140x140_jfs/t19033/282/228586865/385863/8cf762e3/5a6552e4N44de3018.jpg!q90!cc_70x70.webp",
+                            price:"30",
+                            total: "30",
+                            sub:"劲牌官方旗舰店",
+                            more:"更多食品饮料券"
+                        }
+                    ]
+
+                }
+            ],
+            looks:[
+                {
+                    href:"xx1",
+                    src:"https://img12.360buyimg.com/mobilecms/s350x250_jfs/t24256/65/1898765607/97180/a9ab709/5b6c298eN9df0b50e.jpg!q90!cc_350x250.webp",
+                    tit:"818手机节在即，这里有一份换机攻略",
+                    sub_tit:"618是不是又错过了自己心仪的物件？随着电商不断推出大促活动日，我们不经意间已经习惯了在618、11.11等节日给自己“抢”心爱的产品。就在几天之后，京东的818手机节又将开启新的一轮“血雨腥风”。"
+                },{
+                    href:"xx2",
+                    src:"https://img12.360buyimg.com/mobilecms/s350x250_jfs/t23848/37/1824839996/194299/b9adf3dd/5b6bca88N2586ff4a.jpg!q90!cc_350x250.webp",
+                    tit:"美人计重塑婀娜身姿，get妖娆小蛮腰",
+                    sub_tit:"炎炎夏日，是一个大秀身姿的好时节。在这个夏天，选择一款什么样的衣服，能够展示自己婀娜多姿的身材呢？好想穿上性感的露挤装，露出自己的马甲线。"
+
+                }
+            ],
+            items:[
+                {
+                    href:"xx",
+                    url:"https://img12.360buyimg.com/mobilecms/s700x256_jfs/t14224/229/529700229/74868/a1cc7364/5a314f85N5bfd22c7.jpg!q90!cc_350x128.webp",
+                    url1:"//img12.360buyimg.com/mobilecms/s210x210_jfs/t2752/45/4123813528/378749/d991bba4/57ac42f4Nfd006bd4.jpg!q90",
+                    url2:"https://img30.360buyimg.com/mobilecms/s210x210_jfs/t2932/239/2072987121/181731/ad6ec9a5/579a1a1dN40d3c968.jpg!q90",
+                    url3:"https://img10.360buyimg.com/mobilecms/s210x210_jfs/t7543/310/2652595161/359772/af7f4a4/59b2475dNcf4fba4d.jpg!q90",
+                    tit:"交通拥挤有妙招,电动车小巧穿行无障碍",
+                    sub_tit:"随着人们消费水平的提高，公路上的小车是越来越多了，导致每到上下班高峰期的时候，大路的车辆堵了一环又一环，而且你根本不知道它到底会塞多久，所以我们需要变通一下，不妨骑上电动车来个绿色出行，它够小巧玲珑，即使交通再怎么拥挤，也总有它可以通过的地方。"
+
+                },{
+                    href:"xx",
+                    url:"https://img11.360buyimg.com/mobilecms/s700x256_jfs/t22072/272/1256059224/441231/110f358a/5b238f4bN9991d24d.png!q90!cc_350x128.webp",
+                    url1:"https://img20.360buyimg.com/mobilecms/s210x210_jfs/t21130/339/1230486715/124676/4f7892f5/5b23ae03Ncb5c2958.jpg!q90",
+                    url2:"https://img20.360buyimg.com/mobilecms/s210x210_jfs/t21877/45/1251340514/96087/cb6ebed4/5b23b031N84b9015c.jpg!q90",
+                    url3:"https://img14.360buyimg.com/mobilecms/s210x210_jfs/t21685/28/1277404675/84947/7f212766/5b23afccN796068bd.jpg!q90",
+                    tit:"“表”中乾坤，流转腕间睿智磁场",
+                    sub_tit:"男士本身衣物风格差别不大，但是又想要与众不同，这时候就需要来一个时尚有型的手表来拯救你单一的风格。精致的表盘，有质感的表带，都可以为你的整体衣物增添不一样的风采，抬手看时间的动作还可在无形之中突显你不凡的品味。佩戴有表的男士，是一种准时守时的象征，会给人一种睿智沉稳的安全感。"
+                }
+            ],
+            list:[
+                {
+                    des:[
+                        {
+                            url:"xx",
+                            text:"0元抽电脑"
+                        },
+                        {
+                            url:"xx",
+                            text:"百万阶梯券"
+
+                        },
+                        {
+                            url:"xx",
+                            text:"家具慢199减100"
+
+                        },
+                        {
+                            url:"xx",
+                            text:"小米平衡车"
+
+                        }]
+                },
+
+                {
+                    des:[
+                        {
+                            url:"xx",
+                            text:"会员权益更新"
+                        },
+                        {
+                            url:"xx",
+                            text:"会员权益更新"
+
+                        },
+                        {
+                            url:"xx",
+                            text:"会员权益更新"
+
+                        },
+                        {
+                            url:"xx",
+                            text:"会员权益更新"
+                        }]
+                }
+            ],
+            chartLists:[
+            ],
+            index:0,
+            index1: 0,
+            index2: 0,
+            index3: 0,
+            index4: 0,
+            index5: 0,
+            index6: 0,
+            index7: 0,
+        },
+        methods:{
+            overShow:function(index){
+                this.current_index = index;
+            },
+            changeOpacity: function(a){
+                this.index += a;
+                if(this.index === -1){
+                    this.index = 2;
+                }
+                if(this.index === 3){
+                    this.index = 0;
+                }
+            },
+            turnImg: function(i){
+                this.index1 = i;
+            },
+            turnPic: function(i){
+                this.index = i;
+            },
+            killPicture: function(a){
+                this.index2 += a;
+                if(this.index2 === 8){
+                    this.index2 = 0;
+                }
+                if(this.index2 === -4){
+                    this.index2 = 4;
+                }
+            },
+            changeChartList: function(index){
+                this.index3 = index;
+            },
+            changeOne: function(index){
+                this.index4 = index;
+            },
+            changeTwo: function(index){
+                this.index5 = index;
+            },
+            changeThree: function(index){
+                this.index6 = index;
+            },
+            changeSeven: function(index){
+                this.index7 = index;
+            },
+            pageTurn: function(a){
+                this.index4+=a;
+                if(this.index4===2){
+                    this.index4 = 0;
+                }
+                if(this.index4 === -1){
+                    this.index4 = 1;
+                }
+            },
+            turnThree: function(a){
+                this.index6 += a;
+                if(this.index6===2){
+                    this.index6 = 0;
+                }
+                if(this.index6 === -1){
+                    this.index6 = 1;
+                }
+            },
+            turnSeven: function(a){
+                this.index7 += a;
+                if(this.index7 === 9){
+                    this.index7 = 0
+                }
+                if(this.index7 === -3){
+                    this.index7 = 6
+                }
+            }
+        },
+
+        created: function(){
+            var that = this;
+            axios.get("../data/chartLists.json")
+                .then(function(res){
+                    that.chartLists = res.data;
+                })
+                .catch(function(err){
+                    console.error(err)
+                });
+        }
+
+    })
+</script>
+</html>

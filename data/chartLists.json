@@ -1,0 +1,88 @@
+[
+  {
+    "num":0,
+    "des":[
+      {
+        "url":"https://img10.360buyimg.com/mobilecms/s160x160_jfs/t21532/360/764701806/223647/83d30500/5b1799cdN37efd6ec.jpg!q90.webp",
+        "number":1,
+        "color": "#e74240",
+        "sub":"荣耀9i 4GB+64GB 魅海蓝 移动联通电信4G全面屏手机 双卡双待"
+      },
+      {
+        "url":"https://img10.360buyimg.com/mobilecms/s160x160_jfs/t20293/89/697940413/175156/2dc4fbd1/5b15ffd5Nccf91838.jpg!q90.webp",
+        "number":2,
+        "color":"#ed713d",
+        "sub":"vivo Z1 新一代全面屏AI双摄手机 4GB+64GB 瓷釉黑 移动联通电信全网通4G手机 双卡双待"
+      },{
+        "url":"https://img20.360buyimg.com/mobilecms/s160x160_jfs/t8284/363/1326459580/71585/6d3e8013/59b857f2N6ca75622.jpg!q90.webp",
+        "number":3,
+        "color":"#feb185",
+        "sub":"Apple iPhone 8 Plus (A1864) 64GB 金色 移动联通电信4G手机"
+      }
+    ],
+    "des2":[
+      {
+        "url":"https://img14.360buyimg.com/mobilecms/s160x160_jfs/t277/193/1005339798/768456/29136988/542d0798N19d42ce3.jpg!q90.webp",
+        "number":4,
+        "color": "#666",
+        "sub":"Apple iPhone 6 32GB 金色 移动联通电信4G手机"
+      },
+      {
+        "url":"https://img10.360buyimg.com/mobilecms/s160x160_jfs/t18157/222/1822300674/231514/6c179af8/5ad87390N086a3c91.jpg!q90.webp",
+        "number":5,
+        "color":"#666",
+        "sub":"荣耀10  GT游戏加速 AIS手持夜景  6GB+64GB  幻影蓝全网通 移动联通电信4G 双卡双待"
+      },{
+        "url":"https://img10.360buyimg.com/mobilecms/s160x160_jfs/t24004/53/1579933916/303243/28d65987/5b63f2efN77c26128.jpg!q90.webp",
+        "number":6,
+        "color":"#666",
+        "sub":"一加手机6 8GB+128GB 琥珀红 全面屏双摄游戏手机 全网通4G 双卡双待"
+      }
+    ]
+  },
+
+  {
+  },{
+},{
+  "num":0,
+  "des":[
+    {
+      "url":"https://img13.360buyimg.com/mobilecms/s160x160_jfs/t19552/341/795330923/213401/83e690b7/5aa898aeN6438002a.jpg!q90.webp",
+      "number":1,
+      "color": "#e74240",
+      "sub":"蒙牛 早餐奶 核桃味 250ml*16  礼盒装"
+    },
+    {
+      "url":"https://img12.360buyimg.com/mobilecms/s160x160_jfs/t19339/55/759661382/91186/a32036b9/5aa77e11Na27afa82.jpg!q90.webp",
+      "number":2,
+      "color":"#ed713d",
+      "sub":"蒙牛 特仑苏 纯牛奶 250ml*16 礼盒装"
+    },{
+      "url":"https://img13.360buyimg.com/mobilecms/s160x160_jfs/t19999/362/685865178/234771/6af974e1/5b07a31aN610e0fc7.jpg!q90.webp",
+      "number":3,
+      "color":"#feb185",
+      "sub":"王老吉 凉茶 茶叶饮料 绿盒装 250ml*24盒 整箱水饮 中华老字号"
+    }
+  ],
+  "des2":[
+    {
+      "url":"https://img14.360buyimg.com/mobilecms/s160x160_jfs/t277/193/1005339798/768456/29136988/542d0798N19d42ce3.jpg!q90.webp",
+      "number":4,
+      "color": "#666",
+      "sub":"Apple iPhone 6 32GB 金色 移动联通电信4G手机"
+    },
+    {
+      "url":"https://img10.360buyimg.com/mobilecms/s160x160_jfs/t18157/222/1822300674/231514/6c179af8/5ad87390N086a3c91.jpg!q90.webp",
+      "number":5,
+      "color":"#666",
+      "sub":"荣耀10  GT游戏加速 AIS手持夜景  6GB+64GB  幻影蓝全网通 移动联通电信4G 双卡双待"
+    },{
+      "url":"https://img10.360buyimg.com/mobilecms/s160x160_jfs/t24004/53/1579933916/303243/28d65987/5b63f2efN77c26128.jpg!q90.webp",
+      "number":6,
+      "color":"#666",
+      "sub":"一加手机6 8GB+128GB 琥珀红 全面屏双摄游戏手机 全网通4G 双卡双待"
+    }
+  ]
+},{
+}
+]
