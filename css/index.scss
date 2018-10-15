@@ -67,7 +67,6 @@ input{
       padding: 8px;
     }
   }
-
 }
 header{
   position: relative;
@@ -81,10 +80,8 @@ header{
     position: absolute;
     top: -40px;
     left: 130px;
-    img{
-      width: 100%;
-      height: 100%;
-    }
+    background-image: url(//misc.360buyimg.com/mtd/pc/index_2017/2.1.0/static/images/sprite.head@2x.png);
+    background-size: 317.5px 170px;
   }
   #write{
     margin: 20px 0 5px 445px;
