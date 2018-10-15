@@ -16,6 +16,7 @@ em, i, u {
 }
 
 .top {
+  width: 1320px;
   padding-left: 120px;
 }
 .top .log {
@@ -148,7 +149,7 @@ em, i, u {
 
 .shop-head {
   height: 150px;
-  width: 1431px;
+  width: 1440px;
   overflow: hidden;
 }
 .shop-head .shop-bg {
@@ -161,7 +162,7 @@ em, i, u {
   height: 100%;
 }
 .shop-head .shop-menu {
-  width: 1431px;
+  width: 1440px;
   height: 40px;
 }
 .shop-head .shop-menu .menu {

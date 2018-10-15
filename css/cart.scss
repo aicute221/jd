@@ -3,12 +3,14 @@ body{
   color: #666;
 }
 .top{
-  padding-left: 220.5px;
+  width:1220px;
+  padding-left: 220px;
 }
 .cart-search{
-  margin-left: 220.5px;
+  margin: 10px auto 0 auto;
+  width: 1000px;
   position: relative;
-  margin-top: 10px;
+
   >div{
     display: inline-block;
   }
@@ -44,8 +46,6 @@ body{
         line-height: 18px;
         width: 260px;
         height: 18px;
-        //border: solid 2px #c91623;
-
       }
       &:last-child{
         color: white;
@@ -58,8 +58,8 @@ body{
   }
 }
 .commodity{
-  margin-left: 220.5px;
-  margin-top: 7px;
+  width: 1000px;
+  margin: 7px auto 0 auto;
   .fixed{
     .fixed-tit{
       a{

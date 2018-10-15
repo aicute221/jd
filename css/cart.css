@@ -4,13 +4,14 @@ body {
 }
 
 .top {
-  padding-left: 220.5px;
+  width: 1220px;
+  padding-left: 220px;
 }
 
 .cart-search {
-  margin-left: 220.5px;
+  margin: 10px auto 0 auto;
+  width: 1000px;
   position: relative;
-  margin-top: 10px;
 }
 .cart-search > div {
   display: inline-block;
@@ -57,8 +58,8 @@ body {
 }
 
 .commodity {
-  margin-left: 220.5px;
-  margin-top: 7px;
+  width: 1000px;
+  margin: 7px auto 0 auto;
 }
 .commodity .fixed .fixed-tit a {
   display: inline-block;
@@ -196,6 +197,7 @@ body {
   height: 20px;
   line-height: 20px;
   border: 1px solid #999;
+  cursor: pointer;
 }
 .commodity .shopping .shop-shopping .shop-goods .shop-good .unit-num input {
   width: 40px;
